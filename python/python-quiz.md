@@ -195,9 +195,9 @@ num_people = 5
 
 if num_people > 10:
     print("There is a lot of people in the pool.")
-elif num_people > 4:
+elif num_people > 4;
     print("There are some people in the pool.")
-elif num_people > 0:
+elif num_people > 0;
     print("There are a few people in the pool.")
 else:
     print("There is no one in the pool.")
@@ -876,9 +876,9 @@ def calculate_sales_tax(subtotal):
 
 #### Q72. What is the correct way to run all the doctests in a given file from the command line?
 
-- [ ] python3 -m doctest <filename>
-- [x] python3 <filename>
-- [ ] python3 <filename> rundoctests
+- [ ] python3 -m doctest <_filename_>
+- [x] python3 <_filename_>
+- [ ] python3 <_filename_> rundoctests
 - [ ] python3 doctest
 
 #### Q73. What is a lambda function ?
@@ -1046,3 +1046,12 @@ else;
 ```
 
 This question seems to be an updated version of Question 19.
+
+#### Q86. How does `defaultdict` work?
+
+- [ ] `defaultdict` will automatically create a dictionary for you that has keys which are the integers 0-10.
+- [ ] `defaultdict` forces a dictionary to only accept keys that are of the types specified when you created the `defaultdict` (such as strings or integers).
+- [x] If you try to read from a `defaultdict` with a nonexistent key, a new default key-value pair will be created for you instead of throwing a `KeyError`.
+- [ ] `defaultdict` stores a copy of a dictionary in memory that you can default to if the original gets unintentionally modified.
+
+Updated version of Question 14.
