@@ -7,7 +7,7 @@
 - [ ] ls -l
 - [x] blkid
 
-#### Q2. Linux file access control lists (ACLs) are \_\_\_.
+#### Q2. Linux file access control lists (ACLs) are \_.
 
 - [x] discretionary access control system permissions layered over standard Linux permissions
 - [ ] mandatory access control system permissions layered over standard Linux permissions
@@ -89,7 +89,7 @@ ps -e --format uid,pid,ppid,%cpu,cmd
 - [ ] !\*
 - [x] !ls
 
-#### Q12. The ssh-copy-id command copies \_\_\_ to the remote host.
+#### Q12. The ssh-copy-id command copies \_ to the remote host.
 
 - [ ] both private and public keys
 - [x] the ssh public key
@@ -144,12 +144,12 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 
 #### Q19. What character class is equal to this set?
 
-[0-9]
+`[0-9]`
 
-- [ ] [[:alnum:]]
-- [x] [[:digit:]]
-- [ ] [[:alpha:]]
-- [ ] [[:num:]]
+- [ ] `[[:alnum:]]`
+- [x] `[[:digit:]]`
+- [ ] `[[:alpha:]]`
+- [ ] `[[:num:]]`
 
 #### Q20. When archiving files, which command will preserve all file attributes including ACLs and SELinux security context?
 
@@ -174,7 +174,7 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 
 #### Q23. When would this system cron job run its task?
 
-0 1 \* \* \*
+`0 1 \* \* \*`
 
 - [ ] every minute of the hour
 - [ ] every hour of every day
@@ -216,7 +216,7 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [x] It has the SUID permission mode and is owned by root.
 - [ ] It is a system administration command.
 
-#### Q29. When a user deletes a file using the rm command, Linux will \_\_\_.
+#### Q29. When a user deletes a file using the rm command, Linux will \_.
 
 - [ ] always ask for confirmation
 - [ ] back up the file before it deletes the file
@@ -244,30 +244,30 @@ echo \$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'
 - [x] -b
 - [ ] -x
 
-#### Q33. Which choice will not print "Hello World" in the terminal?
+#### Q33. Which choice will _not_ print "Hello World" in the terminal?
 
-- [ ]
+- [ ] A
 
 ```bash
 myVar = 5
 [[ $myVar -lt 10 ]] && echo " Hello World"
 ```
 
-- [x]
+- [x] B
 
 ```bash
 myVar = 5
 [[ $myVar -lt 10 ]] || echo " Hello World"
 ```
 
-- [x]
+- [ ] C
 
 ```bash
 myVar = 5
-[[ $myVar -gt 10 ]] && echo " Hello World"
+[[ ! $myVar -gt 10 ]] && echo " Hello World"
 ```
 
-- [ ]
+- [ ] D
 
 ```bash
 myVar = 5
@@ -303,8 +303,8 @@ date | mail -s "This is a remote test" user1@rhhost1.localnet.com
 
 - [ ] resolving the local name
 - [ ] blocking sites using iptables
-- [x] setting the hostname
-- [ ] configuring DNS name servers
+- [ ] setting the hostname
+- [x] configuring DNS name servers
 
 #### Q38. In an extended regular expression, you would use (pattern){3} to match three instances of the pattern. How would you match the same thing with an extended glob?
 
@@ -327,12 +327,12 @@ date | mail -s "This is a remote test" user1@rhhost1.localnet.com
 - [ ] pam_krb5
 - [ ] kdb5_util
 
-#### Q41. To search from the current cursor position up to the beginning of the file using VIM, type **\_\_** and then the search criteria.
+#### Q41. To search from the current cursor position up to the beginning of the file using VIM, type \_ and then the search criteria.
 
-- [x] ?
-- [ ] \
-- [ ] /
-- [ ] /search
+- [x] `?`
+- [ ] `\`
+- [ ] `/`
+- [ ] `/search`
 
 #### Q42. What is the job of the NetworkManager daemon?
 
@@ -354,3 +354,318 @@ date | mail -s "This is a remote test" user1@rhhost1.localnet.com
 - [ ] It resizes the filesystem to match the volume group size.
 - [x] It does nothing.
 - [ ] It remounts the filesystem with the new size.
+
+#### Q45. What would this sed command do?
+
+```bash
+sed -E 's/[a-Z]{4}/($)/'  textfile.txt
+```
+
+- [ ] It would substitute the letter with an ampersand (&).
+- [ ] It would replace all letters in the textfile.txt file with ampersand (&).
+- [x] It would replace the first four letters with an ampersand (&).
+- [ ] It would place parentheses around the first four letters of each line of textfile.txt.
+
+#### Q46. With GNU tools such as GNU grep, awk, and sed, what is difference between regular expressions (BREs) and extended regular expressions (EREs)?
+
+- [ ] EREs support occurrence operators.
+- [x] Only the syntax differs.
+- [ ] EREs support alternation.
+- [ ] EREs can match groups.
+
+#### Q47. Which kernel module do you need to load to use interface bonding?
+
+- [x] bonding.
+- [ ] team.
+- [ ] netbond.
+- [ ] bond.
+
+#### Q48. What does this command string do?
+
+```bash
+find / -size -10K -exec ls -l {} \;
+```
+
+- [ ] It finds all files larger than 10k and long lists them using the ls command.
+- [ ] It finds all files of size 10k using ls -l and hands them off to the find command to display.
+- [ ] It finds all files in the / directory of size 10k and long lists them.
+- [x] It finds all files in the file system smaller than 10k and long lists them using the ls command.
+
+#### Q49. To change the priority of multiple swap partitions, which file would you edit?
+
+- [ ] /proc/swapiness
+- [x] /etc/fstab
+- [ ] /etc/mounts
+- [ ] /etc/swaps
+
+#### Q50. What would you type to list all systemd service unit files, whether they are enabled or not?
+
+- [ ] systemctl list-services.
+- [ ] chkconfig --list-all
+- [x] systemctl list-unit-files -at service
+- [ ] systemctl list-unit-files -t service
+
+#### Q51. You can set Linux group passwords using which command?
+
+- [x] gpasswd
+- [ ] passwd
+- [ ] editsam
+- [ ] grouppass
+
+#### Q52. With most GNU commands, if an option is a word, what will it be preceded by?
+
+- [x] two dashes
+- [ ] a backslash
+- [ ] one dash
+- [ ] nothing
+
+#### Q53. What would happen if you have a script file named script that takes a long time to complete, and you type `nohup ./script &` in the command line?
+
+- [ ] The script will remain running in the background even if you reboot the system.
+- [ ] The script will run in your terminal and you will not be able to do anything until it completes.
+- [x] The script will run in the background until you end the session.
+- [ ] The script will run in the background and will continue running even if you end the session.
+
+#### Q54. To elevate privileges using the `sudo` command, a user must **\_**.
+
+- [ ] enter the root user's password
+- [x] enter their own password
+- [ ] enter the sudo user's password
+- [ ] change to the root group
+
+[A Cloud Guru's Blog](https://acloudguru.com/blog/engineering/linux-commands-for-beginners-sudo#:~:text=Sudo%20asks%20for%20your%20user%20password.%C2%A0%20Note%20that%20it%20is%20asking%20for%20your%20password%2C%20not%20the%20root%20password.)
+
+#### Q55. When would this system cron job run its task?
+
+`0 22 * * 1-5`
+
+- [ ] on the 22nd of every month from June to May
+- [x] at 10:00 PM Monday to Friday
+- [ ] every 22 minutes every day except weekends
+- [ ] from 1:00 AM to 5:00 AM on the 22nd of every month
+
+#### Q56. How does TCP Wrappers differ from a firewall?
+
+- [ ] Firewalls are only service specific, whereas TCP Wrappers can block all traffic.
+- [ ] TCP Wrappers works at the network layer, so it blocks traffic before the firewall even sees it.
+- [ ] Firewalls easily spawn commands to operate on connection data, whereas TCP Wrappers cannot.
+- [x] TCP Wrappers works at the application layer, so it can make access decisions on encrypted data.
+
+**Note:** TCP Wrapper works on Application Layer but answer is not too much confirmed.
+
+#### Q57. As root, you set execute permissions for user, group, and other on a directory. Now users can do what?
+
+- [ ] They can execute files in it.
+- [x] They can traverse it.
+- [ ] They can read files in it.
+- [ ] They can delete files in it.
+
+**Note:** This is correct because of the keyword "directory". More info at: https://www.tutorialspoint.com/unix/unix-file-permission.htm
+
+#### Q58. What will this command print?
+
+`echo "Thu Jun 4 15:45:45 PDT 2020" | cut -f3 -d" "`
+
+- [ ] It will print nothing.
+- [ ] Thu Jun 4 15:45:45 PDT 2020
+- [ ] 0.6567708333333333
+- [x] 4
+
+#### Q59. How can you improve this code snippet?
+
+```
+if ls /etc/passwd &> /dev/null
+then
+    echo "exists"
+fi
+```
+
+- [ ] The code snippet cannot be improved, this is a valid way of checking for the existence of a file.
+- [x] Use Bash's built-in `[[ ]]` test conditions instead of the ls command.
+- [ ] The redirect to `/dev/null` will silence the return code invalidating the conditional. Removing the redirect will solve this.
+- [ ] The ls command will output the name of the file to the screen. Running ls in quiet mode will improve the code snippet.
+
+#### Q60. Using a systemd-based distribution, you want to restrict the cron service from running either automatically or manually. Which command would you run?
+
+- [ ] systemctl disable crond
+- [ ] systemctl disallow crond
+- [x] systemctl mask crond
+- [ ] systemctl stop crond
+
+**Note:** This is the correct answer because "mask" prohibits all kinds of activation of the unit, including manual activation.
+[Reference](https://www.commandlinux.com/man-page/man1/systemctl.1.html) : search "mask".
+
+#### Q61. What issue might a user have when they mount a filesystem by partition path such as /dev/sdal in the /etc/fstab file?
+
+- [x] The device order may change on boot, resulting in a system that will not boot properly.
+- [ ] The user may run out of device letters.
+- [ ] There are no issues with referring to partitions by their partition path.
+- [ ] It is more difficult identifying mounted devices by partition path.
+
+[Reference](https://access.redhat.com/discussions/6004221)
+
+#### Q62. Which option would you choose to force grep to use a basic regular expression (BRE)?
+
+- [ ] grep -E
+- [ ] grep -B
+- [ ] grep -e
+- [x] grep -G
+
+**Explanation**: Man page of grep command.
+
+#### Q63. An rsyslogd filter determines which items in a log file to act on. What is it made up of?
+
+- [ ] a facility and an action
+- [x] a filter and an action
+- [ ] a facility and a priority
+- [ ] a filter and a priority
+
+[Reference](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-viewing_and_managing_log_files)
+
+#### Q64. Which choice is a Network Manager tool used to configure network connections from the GUI?
+
+- [ ] nmcli
+- [ ] ip
+- [ ] Onmtui
+- [x] nm-connection-editor
+
+#### Q65. What will not happen if you run the make command without parameters?
+
+- [x] It will clean up all previously generated binaries and perform a new build.
+- [ ] It will run rules of compilation and building.
+- [ ] It will look for a file called makefile in your current directory.
+- [ ] It will build only programs that need to be rebuilt.
+
+#### Q66. Most commands that support SELinux use which option to display SELinux security context?
+
+- [ ] -S
+- [ ] --selinux
+- [ ] --MAC
+- [x] -Z
+
+#### Q67. What is the difference between the whoami and logname commands?
+
+- [ ] whoami and logname provide the same information.
+- [x] whoami tells who are you currently, and logname tells who you were when you logged in initially.
+- [ ] logname specifies the name of the login log file, and whoami prints the logged in username.
+- [ ] whoami shows you who logged in as initially, and logname shows who are you currently.
+
+#### Q68. What is the command to create an associative array in Bash?
+
+- [ ] declare -a
+- [ ] aarray
+- [ ] array -a
+- [x] declare -A
+
+#### Q69. What tool Should you use to replace a physical volum in LVM?
+
+- [ ] lvcopy
+- [ ] tar
+- [x] pvmove
+- [ ] cp
+
+#### Q70. What is the difference the `==` and `=~` comparison operators when used in BASH double square bracket `if` conditionals?
+
+- [x] The `==` operator performs a string comparison; `=~` performs a regex comparison.
+- [ ] The `==` operator performs a string comparison; `=~` performs a glob pattern comparison.
+- [ ] The `=~` operator performs a string comparison; `==` performs a regex comparison.
+- [ ] There is no `=~` operator in BASH `if` conditionals.
+
+#### Q71. What is the difference between these two lines of code?
+
+```shell
+   echo "data" | tee -a file.txt
+   echo "data" >> file.txt
+```
+
+- [x] The first line will append the word `data` to file.txt and output it on the screen. The second line will append the word `data` only to file.txt.
+- [ ] They are the same.
+- [ ] The first line will append the word `data` to file.txt and there will be no output on the screen. The second line will output the word `data` on the screen and append it to `file.txt`
+- [ ] Both lines will overwrite file.txt with the word data.
+
+#### Q72. Using backreferences in a POSIX regular expression, which word would this pattern match?
+
+```shell
+(ss).*\1
+```
+
+- [ ] addressee
+- [x] possess
+- [ ] barrenness
+- [ ] successfully
+
+#### Q73. To run CGI scripts with Apache, you need to **\_**.
+
+- [ ] compile the script with a CGI compiler
+- [ ] make the script executable
+- [x] make the script executable and set the `httpd_enable_cgi` SELinux boolean
+- [ ] change the ownership of the script to Apache
+
+[reference here](https://selinuxproject.org/page/ApacheRecipes#Allow_the_Apache_HTTP_Server_to_run_CGI_scripts)
+
+#### Q74. To permanently add NAT to the default zone using firewalld, you would use which command string?
+
+- [ ] `firewall-cmd --permanent --add-nat`
+- [x] `firewall-cmd --permanent --add-masquerade`
+- [ ] `firewall-cmd --zone=default --add-nat`
+- [ ] `firewall-cmd --zone=default --add-masquerade`
+
+[reference here](https://www.rootusers.com/how-to-use-firewalld-rich-rules-and-zones-for-filtering-and-nat)
+
+#### Q75. What is the difference between using `=` and `==` in a BASH double square bracket `if` conditional?
+
+```
+if [[ $FILE == $GLOB ]] ;then
+
+```
+
+- [ ] The single equal sign (`=`) is an assignment operator; the double equal sign (`==`) checks equality.
+- [x] There is no difference.
+- [ ] The single equal sign (`=`) checks equality; the double equal sign (`==`) checks string equality.
+- [ ] The double equal sign (`==`) is an assignment operator; the single equal sign (`=`) checks equality.
+
+[reference here](https://stackoverflow.com/a/12948608)
+
+#### 76. `journald` differs from traditional logging services such as `rsyslogd` and `syslogd` because its logs are **\_** by default.
+
+- [ ] stored remotely
+- [ ] text
+- [x] persistent
+- [ ] not persistent
+
+[reference here](https://sematext.com/blog/journald-logging-tutorial/#toc-journald-storage-4)
+
+### Q77. What is the purpose of a Mail Transport Agent (MTA)?
+
+- [ ] It transports the mail from user's computer to the mail server.
+- [ ] It accepts mail and adds it to the mail queue for further processing.
+- [ ] It stores the mail in a mail queue waiting for the MUA to download it.
+- [x] It transports mail from one mail server to another.
+
+### Q78. What do you need to do before you can perform SSH passwordless logins?
+
+- [ ] Genetare RSA or DSA key pairs using ssh-keygen.
+- [ ] Change the remote user's password.
+- [ ] Create a local SSL certificate.
+- [ ] Change the remote SSH configure to allow it.
+
+### Q79. When installing a downloaded package on the RedHat-based distribution manual using RPM, what may you have to do first?
+
+- [ ] Compile the package source code.
+- [ ] Download all dependencies and install them before installing the desired package.
+- [ ] Agree to an end-user license agreement.
+- [ ] provide the --resolve option so RPM resolves all packages dependency.
+
+### Q80. With GNU tools such as a GNU grep, awk, and sed, what is the difference between basic regular expressions (BREs) and extended regular expressions (EREs)?
+
+- [ ] EREs can match the groups.
+- [ ] EREs support occurrence operators.
+- [ ] ERE's support alternation.
+- [ ] only the syntax differs.
+
+### Q81. What is the difference between reading the list of disk partitions from `/proc/partitions` and getting it using `fdisk -l`?
+
+- [ ] `/proc/partitions` represents the disk partition table more accurately than `fdisk -l`
+- [ ] `/proc/partitions` shows only mounted drives. `fdisk -l` shows all drivers.
+- [ ] There is no difference between the two, and both lists contain the same data.
+- [ ] `/proc/partitions` is the kernel's list of partitions held in ram. `fdisk -l` reads the partition table from the drive itself.

@@ -7,12 +7,16 @@
 - [ ] the poll phase
 - [ ] the events queue
 
+**Explanation:** From javascripttutorial: [reference](https://www.javascripttutorial.net/javascript-call-stack/#:~:text=If%20a%20function%20calls%20another,top%20of%20the%20call%20stack.)
+
 #### Q2. Which of the following is a core module in Node?
 
 - [ ] webpack
 - [x] crypto
 - [ ] request
 - [ ] chalk
+
+**Explanation:** From flaviocopes docs: [reference](https://flaviocopes.com/node-core-modules/)
 
 #### Q3. Which of the following Buffer class methods returns an uninitialized buffer?
 
@@ -21,12 +25,16 @@
 - [ ] from
 - [ ] alloc
 
+**Explanation:** From official docs: [reference](https://nodejs.org/dist/latest-v13.x/docs/api/buffer.html#buffer_class_method_buffer_allocunsafe_size)
+
 #### Q4. Which of the following modules is NOT a built-in module in Node?
 
 - [x] ftp
 - [ ] events
 - [ ] dgram
 - [ ] http2
+
+**Explanation:** From flaviocopes docs: [reference](https://flaviocopes.com/node-core-modules/)
 
 #### Q5. Which fs module method can be used to read the content of a file without buffering it in memory?
 
@@ -35,9 +43,7 @@
 - [x] createReadStream
 - [ ] readFileSync
 
-**Explanation:**
-
-_From official docs: [https://nodejs.org/api/fs.html#fs_dir_read](https://nodejs.org/api/fs.html#fs_dir_read)
+**Explanation:** _From official docs: [reference](https://nodejs.org/api/fs.html#fs_dir_read)
 To minimize memory costs, when possible prefer streaming via fs.createReadStream()._
 
 #### Q6. Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?
@@ -47,12 +53,16 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [ ] resolve4
 - [ ] reverse
 
+**Explanation:** From official docs: [reference](https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback)
+
 #### Q7. How do you check that a value is a date object in Node?
 
 - [x] util.types.isDate(value)
 - [ ] assert.isDate(value)
 - [ ] console.isDate(value)
 - [ ] util.date(value)
+
+**Explanation:** From official docs: [reference](https://nodejs.org/api/util.html#util_util_types_isdate_value)
 
 #### Q8. Can you create an https web server with Node.js?
 
@@ -61,12 +71,16 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [ ] yes, through the path module
 - [ ] yes, with the http module
 
+**Explanation:** From official docs: [reference](https://nodejs.dev/learn/making-http-requests-with-nodejs)
+
 #### Q9. What is the Api that is designed to insulate Addons from changes in the underlying JavaScript engine?
 
 - [ ] A-API
 - [ ] Z-API
 - [x] N-API
 - [ ] X-API
+
+**Explanation:** From official docs: [reference](https://nodejs.org/api/n-api.html#n_api_node_api)
 
 #### Q10. Which CLI option can you use to debug a node script in Chrome DevTools?
 
@@ -75,12 +89,16 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [ ] --chrome
 - [ ] --debug
 
+**Explanation:** From official docs: [reference](https://nodejs.org/en/docs/guides/debugging-getting-started/)
+
 #### Q11. How can you count the number of logical CPUs on the machine that is running Node?
 
 - [ ] node -p "process.cpus"
 - [ ] node -p "util.cpus().size"
 - [ ] node -p "process.os.cpus"
 - [x] node -p "os.cpus().length"
+
+**Explanation:** From coderrocketfuel docs: [reference](https://coderrocketfuel.com/article/get-the-number-of-system-cpu-cores-using-node-js)
 
 #### Q12. Which of the following is a method on the console object?
 
@@ -89,12 +107,16 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [x] time
 - [ ] print
 
+**Explanation:** From official docs: [reference](https://nodejs.org/api/console.html)
+
 #### Q13. Which object is used to manage the cache of required modules?
 
 - [ ] global.cache
 - [ ] module.cache
 - [ ] process.cache
 - [x] require.cache
+
+**Explanation:** From official docs: [reference](https://nodejs.org/api/modules.html#modules_require_cache)
 
 #### Q14. What is the command to silence all process warnings?
 
@@ -103,19 +125,25 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [ ] node -trace-warnings
 - [ ] node index.js --no-warnings
 
-#### Q15. How can you use the promise API with a callback-based function like child_process.exec?
+**Explanation:** From official docs: [reference](https://nodejs.org/api/cli.html#cli_no_warnings)
+
+#### Q15. How can you use the promise API with a callback-based function such as child_process.exec?
 
 - [ ] new Promise(child_process.exec())
 - [ ] util.promisify(child_process.exec())
 - [x] util.promisify(child_process.exec)
 - [ ] new Promise(child_process.exec)
 
+**Explanation:** From official docs: [reference](https://nodejs.org/api/child_process.html)
+
 #### Q16. Which of the following is NOT a Node repl command?
 
-- [ ] .brake
+- [ ] .break
 - [x] .history
 - [ ] .editor
 - [ ] .save
+
+**Explanation:** From official docs: [reference](https://nodejs.org/api/repl.html#repl_commands_and_special_keys)
 
 #### Q17. Which statement is true when you run the code shown below?
 
@@ -126,6 +154,8 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [x] The forked process will have its own VM instance.
 - [ ] The forked process shares the same VM thread with the parent process.
 
+**Explanation:** From official docs: [reference](https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options)
+
 #### Q18. If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?
 
 - [x] EventEmitter.emit('change');
@@ -133,9 +163,7 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [ ] (new EventEmitter()).emit('change');
 - [ ] new EventEmitter('change');
 
-**Explanation:**
-
-_Because the EventEmitter is already in scope. No need to create new one._
+**Explanation:** _Because the EventEmitter is already in scope. No need to create new one._
 
 #### Q19. Which of the following objects is a stream
 
@@ -144,16 +172,14 @@ _Because the EventEmitter is already in scope. No need to create new one._
 - [ ] process
 - [ ] Buffer
 
-**Explanation:**
+**Explanation:** _process.stdout is Buffer type._
 
-_process.stdout is Buffer type._
+#### Q20. Which module variable holds the resolved absolute path of the current module file?
 
-#### Q20. Which module variable holds the resolved aboslute path of the current module file?
-
-- [ ] \_\_pathname
-- [ ] \_\_location
-- [ ] \_\_flder
-- [x] \_\_filename
+- [ ] `__pathname`
+- [ ] `__location`
+- [ ] `__flder`
+- [x] `__filename`
 
 #### 21. If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?
 
@@ -287,10 +313,10 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 
 #### Q37. What are the arguments passed to the module wrapper function?
 
-- [ ] exports, **filename, **dirname
-- [ ] exports, process, require, module, **filename, **dirname
-- [ ] exports, module, **filename, **dirname
-- [x] exports, require, module, **filename, **dirname
+- [ ] `exports, __filename, __dirname`
+- [ ] `exports, process, require, module, __filename, __dirname`
+- [ ] `exports, module, __filename, __dirname`
+- [x] `exports, require, module, __filename, __dirname`
 
 #### Q38. Which library provides Node.js with the event loop?
 
@@ -348,7 +374,7 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [ ] run, edit, print, loop
 - [ ] read, extend, print, loop
 
-#### Q46. Which file does node-gyp use to read the build configuration of module ?
+#### Q46. Which file does node-gyp use to read the build configuration of a module?
 
 - [ ] .gyprc
 - [x] binding.gyp
@@ -383,9 +409,10 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [x] process
 - [ ] child_process
 
-**Explanation:**
+**Explanation:** \_process is an global object and act like a bridge, the others aren't
 
-_process is an global object and act like a bridge, the others aren't (please see https://nodejs.org/api/globals.html or https://nodejs.org/api/process.html#process_process)._
+1. [source](https://nodejs.org/api/globals.html)
+2. [source](https://nodejs.org/api/process.html#process_process)
 
 #### Q51. Which statement is true about Node.js and threads?
 
@@ -394,9 +421,7 @@ _process is an global object and act like a bridge, the others aren't (please se
 - [x] The event loop is single-threaded, but a JavaScript VM can use multiple threads.
 - [ ] JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads.
 
-**Explanation:**
-
-_https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/_
+**Explanation:** _https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/_
 
 #### Q52. Which statement about event emitters is false?
 
@@ -416,12 +441,10 @@ _https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/_
 
 - [ ] const numInstances = cluster.instances().length;
 - [ ] const numInstances = cluster.instances();
-- [ ] const numInstances = require('os').cpus().length;
-- [x] const numInstances = process.cpus().length;
+- [x] const numInstances = require('os').cpus().length;
+- [ ] const numInstances = process.cpus().length;
 
-**Explanation:**
-
-_From official docs: [https://nodejs.org/api/cluster.html#cluster_cluster](https://nodejs.org/api/cluster.html#cluster_cluster)_
+**Explanation:** _From official docs: [https://nodejs.org/api/cluster.html#cluster_cluster](https://nodejs.org/api/cluster.html#cluster_cluster)_
 
 #### Q55. You have to read a large text file, replace some words in it, and write it back to a new file. You know that the memory on your target system is limited. What should you do?
 
@@ -430,17 +453,124 @@ _From official docs: [https://nodejs.org/api/cluster.html#cluster_cluster](https
 - [ ] Copy the file into a database and perform the operations there.
 - [x] Use readline together with streams to read and transform and write the file contents line by line.
 
-**Explanation:**
+**Explanation:** _From official docs: [https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line](https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line)_
 
-_From official docs: [https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line](https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line)_
-
-#### Q56. Which choice is not a global object?
+#### Q56. Which choice is `not` a Node global object?
 
 - [ ] process
 - [ ] exports
 - [ ] setTimeout
 - [x] Buffer
 
-**Explanation:**
+**Explanation:** _process, exports and setTimeout are global objects, Buffer isn't (please see https://nodejs.org/api/globals.html)_
 
-_process, exports and setTimeout are global objects, Buffer isn't (please see https://nodejs.org/api/globals.html)_
+#### Q57. What is the correct way to pipe a readable stream and a writable stream?
+
+- [x] readableStream.pipe(writableStream)
+- [ ] readableStream.on(pipe, writableStream)
+- [ ] writableStream.pipe(readableStream)
+- [ ] writableStream.on(pipe, readableStream)
+
+#### Q58. How can you convert path segments into a string using the platform-specific separator as a delimiter?
+
+- [ ] path.concat
+- [x] path.join
+- [ ] path.format
+- [ ] path.parse
+
+#### Q59. What is the purpose of N-API?
+
+- [ ] to allow users to make requests to the server
+- [x] to insulate Addons from changes in the underlying JavaScript engine
+- [ ] to execute multi-threaded code in the Node environment
+- [ ] to provide a quick way for users to create REST APIs
+
+#### Q60. What is a process object and its role?
+
+- [ ] a locally scoped object that provides information about the current node process
+- [ ] a global object that provides information about files
+- [ ] a global object that provides information about the database
+- [x] a global object that provides information about the current node process
+
+#### Q61. What will this code log to the console?
+
+```
+// File: person.js
+exports.name = "Jane";
+
+// File: index.js
+const person = require('./person.js');
+console.log(person);
+```
+
+- [ ] `{'Jane'}`
+- [x] `{ name: 'Jane' }`
+- [ ] `{}`
+- [ ] `Jane`
+
+#### Q62. What will this code log to the console?
+
+```
+// File: person.js
+exports = "John";
+
+// File: index.js
+const person = require('./person.js');
+console.log(person);
+```
+
+- [ ] `John`
+- [ ] `Undefined`
+- [ ] `{'John'}`
+- [x] `{}`
+
+#### Q63. Is it possible to write tests in Node.js without an external library?
+
+- [x] yes, through the assert module
+- [ ] yes, through the debugger module
+- [ ] yes, through the console module
+- [ ] no
+
+**From the article:** [Making a Testing Framework in Node.js (Without any External Libraries)](https://www.sohamkamani.com/blog/javascript/making-a-node-js-test-runner/)
+
+#### Q64. Which assert module method is usually used to test the error-first argument in callbacks?
+
+- [ ] fail
+- [ ] doesNotThrow
+- [ ] deepStrictEqual
+- [x] ifError
+
+#### Q65. Which choice is not a method on the util module?
+
+- [ ] promisify
+- [x] asyncify
+- [ ] types
+- [ ] callbackify
+
+#### Q66. Which choice is not a subclass of the Error class?
+
+- [x] GlobalError
+- [ ] TypeError
+- [ ] RangeError
+- [ ] AssertionError
+
+#### Q67. What is Node built on?
+
+- [ ] Python
+- [x] V8 JavaScript engine
+- [ ] PHP
+- [ ] c
+
+#### Q68. How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?
+
+- [ ] As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.
+- [ ] As the application code runs asynchronously within a single thread, the execution will block, accepting no more requests until the operation is completed.
+- [ ] As Node.js is asynchronous, this is handled by a threadpool and the performance will not notably degrade.
+- [ ] The current thread will block until the executon is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time.
+
+#### Q69. What is used for parsing and running Javascript in Node.js?
+
+- [ ] EventLoop
+- [ ] Libuv
+- [x] Google V8
+- [ ] Express.js

@@ -23,7 +23,7 @@
 - [ ] service principal and a secret
 - [x] shared access key
 
-**Reference:** [Azure Key Vault Developer's Guide](https://docs.microsoft.com/en-us/azure/key-vault/general/developers-guide#authenticate-to-key-vault-in-code) lists 3 available methods. The _shared access key_ does not exist in Azure at all, the closest term is _shared access signature (SAS)_ but it's used to access Azure Storage only.
+[Azure Key Vault Developer's Guide](https://docs.microsoft.com/en-us/azure/key-vault/general/developers-guide#authenticate-to-key-vault-in-code) lists 3 available methods. The _shared access key_ does not exist in Azure at all, the closest term is _shared access signature (SAS)_ but it's used to access Azure Storage only.
 
 #### Q4. You added a persistent volume claim to your apps YAML manifest. When you attempt to deploy to an existing AKS cluster there is no persistent volume available. What should you do?
 
@@ -53,7 +53,7 @@
 - [ ] Shared key
 - [ ] Certificate
 
-**Explanation:** [Shared access signature](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) exists exactly for the purpose of giving a temporary access. Azure AD user account is not temporary so it needs to be managed. Creating/revoking Certificates for temporary access is just too much hassle.
+[Shared access signature](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) exists exactly for the purpose of giving a temporary access. Azure AD user account is not temporary so it needs to be managed. Creating/revoking Certificates for temporary access is just too much hassle.
 
 #### Q8. The Kineteco web app runs in an Azure Kubernetes Service. You need to monitor feature use and user navigation paths to identify where improvements are needed. What should you do?
 
@@ -62,7 +62,7 @@
 - [ ] Install the App Insights on AKS nodes
 - [ ] Add instrumentation to your app to send usage analytics with Application Insights.
 
-**Notes:** Needs to be clarified. The [Container Monitoring doc](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/containers) explicitly mentions that it's not for AKS. 3 and 4 look right  
+[Container Monitoring doc](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/containers) explicitly mentions that it's not for AKS. 3 and 4 look right
 
 #### Q9. Which choice is not a valid trigger for an Azure functions?
 
@@ -129,7 +129,7 @@
 - [ ] REST API
 - [ ] Server Message Block(SMB)
 
-**Reference:** [What is Azure Files?](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction) page mentions the supported protocols.
+[What is Azure Files?](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction) page mentions the supported protocols.
 
 #### Q18. You are writing an app for a sales team. You need to implement security in SQL Server to ensure that sales representatives see customer financial information only for customers whom they manage. Your app must make this transparent to the user. Which SQL data security option should you choose?
 
@@ -277,7 +277,6 @@
 - [ ] SqlPackage.exe /TargetFile:" myapp.bacpac " /Action:**Import**
       /SourceServerName:"kinetecosql.database.windows.net"
       /SourceDatabaseName:"kinetecoweb" /SourceUser:"admin" /SourcePassword:"MyPassword"
-      SqiPackage.exe /TargetFile :" myapp.bacpac Action:Import
 - [ ] SqlPackage.exe /TargetFile:"./myapp.bacpac" /Action:**Publish**
       /SourceServerName:"kinetecosql.database.windows.net"
       /SourceDatabaseName:"kinetecoweb" /SourceUser:"admin" /SourcePassword:"MyPassword"
@@ -341,7 +340,7 @@
 - [ ] Service Bus
 - [x] Queue Storage
 
-#### Q45. In Azure Key Vault, you can manage access to your application secrets by setting permissions at any level except **\_\_**.
+#### Q45. In Azure Key Vault, you can manage access to your application secrets by setting permissions at any level except **\_**.
 
 - [ ] on the secret itself
 - [ ] by secret type
@@ -393,9 +392,32 @@
 - [ ] page blob
 - [ ] block blob
 
-#### Q52. Your microservices application includes a logging component that performs a large number of sequentinal writes. Which type of Azure Storage should you use?
+#### Q52. Group policy objects are not being applied to domain controllers because the Default Domain Controllers and Default Domain group policies are corrupt. What can you run in a command prompt to recover them?
 
-- [ ] CORS
-- [ ] custom domains
-- [ ] webjobs
-- [ ] deployment slots
+- [ ] `dcpromo.exe`
+- [x] `dcgpofix.exe`
+- [ ] `dcdiagfix.exe`
+- [ ] `ntdsutil.exe`
+
+#### Q53. Your JavaScript app hosted in Azure App Service needs to be able to make calls to a remote domain in another Azure region. Which App Service feature do you need to configure?
+
+- [x] `CORS`
+- [ ] `deployment slots`
+- [ ] `WebJobs`
+- [ ] `custom domains`
+
+As described in [Microsoft Docs: Hosting a Restful-API with CORS in AAS](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api): The Answer should be CORS (Cross Origin Ressource Sharing)
+
+#### Q54. Bindings in Azure Function triggers have a direction property that is always \_.
+
+- [ ] parallel
+- [ ] out
+- [ ] asynchronous
+- [x] in
+
+#### Q55. You are selecting a cloud messaging solution for your multimedia news app. The app routes news items to the appropriate services for processing and delivery to subscribers. Requirements for the solution are as follows: Events should be routed to the appropriate service to process event; events must be routed to multiple services when necessary; and only relevant events should be routed to a service for processing. Which solution should you use?
+
+- [ ] Event Grid
+- [ ] Service Bus
+- [ ] Event Hub
+- [ ] Queue Storage

@@ -108,8 +108,8 @@
 
 - [ ] cropping images in the media library
 - [ ] injecting specialized scripts into the content area
-- [x] creating a site layout
-- [ ] creating and laying out content
+- [ ] creating a site layout
+- [x] creating and laying out content
 
 #### Q14. Which of the following file types is NOT involved in translating WordPress?
 
@@ -125,12 +125,12 @@
 - [ ] 0
 - [ ] 5
 
-#### Q16. What's the primary difference between template tags prefaced with the* versus get_the*?
+#### Q16. What's the primary difference between template tags prefaced with the **versus get_the**?
 
-- [ ] Template tags prefaced with the\_ don't accept arguments.
-- [ ] Template tags prefaced with the\_ can be used directly within a template.
-- [ ] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
-- [ ] Template tags prefaced with the\_ return a value. Template tags prefaced with get_the display a value.
+- [ ] Template tags prefaced with the \_ don't accept arguments.
+- [ ] Template tags prefaced with the \_ can be used directly within a template.
+- [x] Template tags prefaced with the \_ display a value. Template tags prefaced with get_the return a value.
+- [ ] Template tags prefaced with the \_ return a value. Template tags prefaced with get_the display a value.
 
 #### Q17. WP_Query is the WordPress query class that is used to fetch posts from the database. How would you create a new instance of this class?
 
@@ -256,7 +256,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 - [ ] Access site files via FTP and navigate to /wp-content/plugins/. Delete the folder of the plugin that you would like to disable or simply rename it.
 - [ ] Use phpMyAdmin to change the wp_options table's active_plugins option value to a:0:{}.
 
-#### Q30. The WordPress REST API is designed to receive and respond to particular types of requests using basic HTML methods. For example, a request to upload a PHP file into a particular folder on a server might look like the code POST /folder/\_file.php. Based on this code, what would you call /folder/\_file.php (in REST API terms)?
+#### Q30. The WordPress REST API is designed to receive and respond to particular types of requests using basic HTML methods. For example, a request to upload a PHP file into a particular folder on a server might look like the code POST `/folder/_file.php`. Based on this code, what would you call /folder/\_file.php (in REST API terms)?
 
 - [ ] schema
 - [ ] route
@@ -284,7 +284,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 - [ ] Manually delete suspicious files on the server and delete any database tables that are not core WordPress.
 - [ ] Change your hosting password, your WordPress admin password, and your database password.
 
-**Explanation**: It's not the cheapest, but it's the most reliable. Restoring the backup might not help if you have backdoor scripts installed outside of WP directory. 
+**Explanation**: It's not the cheapest, but it's the most reliable. Restoring the backup might not help if you have backdoor scripts installed outside of WP directory.
 
 #### Q34. If you wanted to register a custom post type, which hook would you use?
 
@@ -316,10 +316,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 #### Q38. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
 
-- [ ] apply_filters( 'Hello World!', 'mytextdomain' );
-- [x] \_\_( 'Hello World!', 'mytextdomain' );
-- [ ] \$string = "Hello World!";
-- [ ] esc_html( 'Hello World!', 'mytextdomain' );
+- [ ] `apply_filters( 'Hello World!', 'mytextdomain' );`
+- [x] `_( 'Hello World!', 'mytextdomain' );`
+- [ ] `\$string = "Hello World!";`
+- [ ] `esc_html( 'Hello World!', 'mytextdomain' );`
 
 #### Q39. What is the core mission of WordPress?
 
@@ -335,13 +335,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 - [ ] Do not output debug information.
 - [x] WordPress updates are accomplished manually only.
 
-**Explanation**: Communicating with WordPress.org is needed for detecting new versions.  
+**Explanation**: Communicating with WordPress.org is needed for detecting new versions.
 
 #### Q41. What's the primary difference between template tags prefaced with the* versus get_the*?
 
 - [ ] Template tags prefaced with the\_ can be used directly within a template. Template tags prefaced with get_the are generally reserved for partial templates.
 - [ ] Template tags prefaced with the\_ return a value. Template tags prefaced with get_the display a value.
-- [ ] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
+- [x] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
 - [ ] Template tags prefaced with the\_ don't accept arguments. Template tags prefaced with get_the do accept arguments.
 
 #### Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.
@@ -382,9 +382,9 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 #### Q44. How would you use CSS to ensure your theme was mobile responsive?
 
 - [ ] Use CSS grid to create responsive layouts.
-- [ ] Use media queries to add breakpoints for different screen sizes.
+- [x] Use media queries to add breakpoints for different screen sizes.
 - [ ] Use Flexbox to create flexible page layouts.
-- [x] all of these answers
+- [ ] all of these answers
 
 #### Q45. The Block API enables developers to register custom blocks in themes or plugins. How would you register a custom block?
 
@@ -407,7 +407,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 - [ ] It runs once per post in the database.
 - [ ] It runs once.
 - [ ] The Loop doesn't run in template files.
-- [ ] It runs once per fetched post.
+- [x] It runs once per fetched post.
 
 #### Q48. Which is NOT a suggested performance improvement for your WordPress website?
 
@@ -416,7 +416,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 - [x] UTF8 is supported.
 - [ ] Choose a very recent version of PHP.
 
-**Explanation**: New versions usually come with speed improvements. Inactivating plugins improves performance. By exclusion it's UTF8.
+**Explanation**: New versions usually come with speed improvements. Inactivating plugins improves performance. By exclusion, it's UTF8.
 
 #### Q49. On a regular WordPress install, what is the difference between transients and the object cache?
 
@@ -425,7 +425,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 - [ ] Transients are available for the duration of a user session and apply to all page components. The object cache is available only for scripts.
 - [ ] Transients persist only for the particular page load. The object cache is persistent and writes to the wp_options table.
 
-#### Q50. For the majority of modern themes, what is the standart method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?
+#### Q50. For the majority of modern themes, what is the standard method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?
 
 - [ ] Theme settings
 - [ ] wp-config.php
@@ -442,11 +442,7 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 #### Q52. According to WordPress PHP coding standards for inline comments, how would you write a single-line comment in a PHP document?
 
 - [x] `// This is a single line comment`
-- [ ] `````/*
-                * This is a single line comment.
-          	  */```
-          ````
-      `````
+- [ ] `/\* _ This is a single line comment._/`
 - [ ] `// This is a single line comment.`
 - [ ] `<!-- This is a single line comment -->`
 
@@ -500,14 +496,17 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 #### Q59 Review of the HTML on line1. The goal of the PHP on line 2 is to extract the field value and assign it to a variable prior to inserting into the database. What is wrong with this PHP code?
 
-`<input type="text" id="title" name="title" />`
-
-`$title = $_POST[ 'title' ];`
+```
+<input type="text" id="title" name="title" />
+$title = $_POST[ 'title' ];
+```
 
 - [ ] The code sample does not use the GET method. It should be wrapped in the `get_post_field()` function and look like this `$title = get_post_field( $GET[ 'title' ] );`
-- [ ] The code sample doesnot use sanitize the form data. It should use the `sanitize_text_field()` function and look like this `$title = sanitize_text_field( $_POST[ 'title' ] );`
+- [x] The code sample does not use sanitize the form data. It should use the `sanitize_text_field()` function and look like this: `$title = sanitize_text_field( $_POST[ 'title' ] );`
 - [ ] There is no error. The code follows WordPress best practices.
 - [ ] The code sample does not allow for translation. It should use a translation function and look like this: `$title = __( $_POST[ 'title' ];`
+
+[Ref](https://hazimhassan.com/linkedin-wordpress-assessment-answers-2021/)
 
 #### Q60. Which software development principle, often used in WordPress, aims to reduce the repetition of code?
 
@@ -539,9 +538,157 @@ add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
 **Explanation**: [Transients](https://developer.wordpress.org/apis/handbook/transients/)
 
-#### Q64. If you wanted to debug some javasript, which method would you use to display data in your browser console?
+#### Q64. If you wanted to debug some JavaScript, which method would you use to display data in your browser console?
 
 - [ ] `windows.alert()`
 - [x] `console.log()`
 - [ ] `document.write()`
 - [ ] `innerHTML`
+
+#### Q65. On a webpage, there are frequently navigation links, a search bar, or other elements that appear before the main content. For keyborad and screen reader users, it can be frustrating to get to the main content of a page because they have to tab through all these elements on every new page load. What can you add to a site to fix this?
+
+- [x] collapsible menus
+- [ ] infinite scroll
+- [ ] skip links
+- [ ] tabbed navigation
+
+#### Q66. What user role would you assign to someone so they can write and publish only their posts and no one else's?
+
+- [ ] Contributor
+- [x] Author
+- [ ] Editor
+- [ ] Subscriber
+
+**Explanation**: [Summary of Roles](https://wordpress.org/support/article/roles-and-capabilities/#summary-of-roles)
+
+#### Q67. When should you edit core WordPress files?
+
+- [ ] when there is no plugin available to make a customization you need
+- [ ] when you need to add a custom page template
+- [ ] when you need to add a custom script to the header or footer of every page in a site
+- [x] You should never edit WordPress core.
+
+**Explanation**: It is not recommended to change WordPress core files other than wp-config.php. [Editing Files Offline](https://wordpress.org/support/article/editing-files/#editing-files-offline)
+
+#### Q68. Which Wordpress conditional would you use to determine if you were on a single page?
+
+- [ ] is_archive()
+- [ ] is_page()
+- [ ] is_page_template()
+- [x] is_single()
+
+[Ref](https://developer.wordpress.org/reference/functions/is_single/)
+
+#### Q69. Wordpress core and many plugins store data in the database in a special format as represented by the sample below. What format is this called?
+
+`a:2:{i:0;s:27:"ari-adminer/ari-adminer.php";i:1;s:30:"atomic-blocks/atomicblocks.php";}`
+
+- [ ] value
+- [x] serialized data
+- [ ] PHP array
+- [ ] text array
+
+[Ref](https://wpengine.com/support/wordpress-serialized-data/)
+
+#### Q70. What is this code sample an example of?
+
+```
+<?php
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+        the_content();
+endwhile;
+else :
+        _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+endif;
+```
+
+- [ ] custom query
+- [ ] template tags
+- [ ] the Loop
+- [ ] nested loop
+
+#### Q71. Which of these are the minimum files required to make a child theme?
+
+- [ ] index.php functions.php
+- [ ] index.php style.css script.js
+- [ ] functions.php style.css script.js
+- [x] functions.php style.css
+
+[Ref](https://kinsta.com/blog/wordpress-child-theme/)
+
+#### Q72. You can harden your Wordpress site security by adding **\_** to your wp-config.php file?
+
+- [ ] hashes and reCAPTCHA
+- [ ] database username and passwords
+- [ ] custom action hooks and filters
+- [x] unique keys and salts
+
+[Ref](https://www.malcare.com/blog/how-to-secure-your-wordpress-site-with-wp-config-php/)
+
+#### Q73. In the WordPress template hierarchy, which file could not be used to display an archive?
+
+- [ ] `archive.php`
+- [x] `index.php`
+- [ ] `page.php`
+- [ ] `category.php`
+
+[Reference](https://developer.wordpress.org/themes/basics/template-hierarchy/)
+
+#### Q74. Why can't you modify the query in a template page?
+
+- [ ] The query can only be run inside the Loop.
+- [x] You can modify the query in a template page if you use `pre_get_posts()`.
+- [ ] According to WordPress best practices, the query should only be modified in `functions.php`.
+- [ ] Due to execution order, the query has already run by the time a template is loaded.
+
+[Reference](https://webcraft.tools/how-to-modify-the-main-wordpress-query/)
+
+#### Q75. For the majority of modern themes, what is the standard method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?
+
+- [ ] WordPress settings
+- [x] Customizer
+- [ ] wp-config.php
+- [ ] Theme settings
+
+[Reference](https://wordpress.org/support/article/creating-a-favicon/)
+
+#### Q76. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
+
+- [ ] `apply_filters( 'Hello World!', 'mytextdomain' );`
+- [ ] `esc_html( 'Hello World!', 'mytextdomain' );`
+- [ ] `$string = "Hello World!";`
+- [x] `__( 'Hello World!', 'mytextdomain' );`
+
+[Reference](https://wordpress.stackexchange.com/questions/231685/how-to-get-a-translated-string-from-a-language-other-than-the-current-one)
+
+#### Q77. Which of these are best practices in accessibility?
+
+- [ ] Do not skip heading levels.
+- [ ] Be sure there is proper color contrast between background and text.
+- [ ] If an activity can be completed with a mouse, it must also be accessible by keyboard.
+- [x] all of these answers
+
+#### Q78. JavaScript variables can hold many data types. Which data type does the following variable represent?
+
+`var x = "16"`
+
+- [ ] Boolean
+- [ ] Number
+- [x] String
+- [ ] Object
+
+[Reference](https://www.w3schools.com/js/js_datatypes.asp)
+
+#### Q79. You would use a post instead of a page when the content is **\_**.
+
+- [ ] for a top-level menu item
+- [ ] nested (has a parent/child relationship with another piece of content)
+- [x] when the content is part of a blog.
+- [ ] evergreen
+
+#### Q80. The WordPress block editor contains a number of default blocks, including blocks for paragraphs, images, quotes, and shortcode. Blocks are grouped into categories to help users browse and discover them. Which is not a category provided by WordPress core?
+
+- [ ] formatting
+- [ ] widgets
+- [ ] layout
+- [x] shortcodes

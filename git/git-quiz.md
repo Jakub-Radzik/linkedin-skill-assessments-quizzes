@@ -29,9 +29,10 @@ git merge --squash HEAD@{1}
 - [ ] Delete the last 5 commits
 - [ ] Merges the last 5 commits into a new branch
 
-`git reset --hard HEAD~5` resets the current branch to the commit just before the last 5 (see `man gitrevisions` for details about this notation and other cool alternatives like `HEAD@{2 days ago}`). As it is a hard reset, it will also overwrite every change in the working tree as well. See `man git-reset`.
+**Explanation:**
 
-`git merge --squash HEAD@{1}` HEAD@{1} is where the branch was just before the previous command (again, see `man gitrevisions`). This command sets the state of the index to be as it would just after a merge from that commit. This whole operation could be a way to take 5 commits from a branch in which you started a new feature and squash them to a single commit, a meaningful one.
+- `git reset --hard HEAD~5` resets the current branch to the commit just before the last 5 (see `man gitrevisions` for details about this notation and other cool alternatives like `HEAD@{2 days ago}`). As it is a hard reset, it will also overwrite every change in the working tree as well. See `man git-reset`.
+- `git merge --squash HEAD@{1}` HEAD@{1} is where the branch was just before the previous command (again, see `man gitrevisions`). This command sets the state of the index to be as it would just after a merge from that commit. This whole operation could be a way to take 5 commits from a branch in which you started a new feature and squash them to a single commit, a meaningful one.
 
 #### Q4. Your current project has several branches; master, beta, and push-notifications. You've just finished the notification feature in the push-notification branch, and you want to commit it to beta branch. How can you accomplish this?
 
@@ -71,7 +72,7 @@ git cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231
 - [ ] A commit is being copied from the feature-user-location branch to the master branch
 - [ ] The branch is switched to the feature-user-location branch, and the specified commit is applied to the branch.
 
-Commits aren't copied when cherry picking, they are cherry picked. The changes introduced by the commit are applied and a new commit is then created. This allow us to get specific changes as if they were patches (in the GIT's book, this is actually called [Patching](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching "See this in the GIT's book")). As a new commit is created upon feature-user-location, HEAD also changes to match it. You can see this in `cat .git/HEAD` and `cat .git/refs/heads/feature-user-location` for this case. See `man git-cherry-pick` for details.
+**Explanation:** Commits aren't copied when cherry picking, they are cherry picked. The changes introduced by the commit are applied and a new commit is then created. This allow us to get specific changes as if they were patches (in the GIT's book, this is actually called [Patching](https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Patching "See this in the GIT's book")). As a new commit is created upon feature-user-location, HEAD also changes to match it. You can see this in `cat .git/HEAD` and `cat .git/refs/heads/feature-user-location` for this case. See `man git-cherry-pick` for details.
 
 **NOTE**: There are two versions of this question so far. The task is always "describe what is happening", the commands are always a `checkout` and a `cherry-pick`, and the correct answer is always the same.
 
@@ -131,8 +132,9 @@ Commits aren't copied when cherry picking, they are cherry picked. The changes i
 #### Q15. How can you display a list of files added or modified in a specific commit?
 
 - [ ] Find the commit in the remote repository, as that's the only place that kind of information is stored.
-- [x] Use the diff-tree command with the commit hash.
-- [ ] Run git commit --info with the commit hash.
+- [x] Use the `diff-tree` command with the commit hash.
+- [ ] Run `git commit --info` with the commit hash.
+- [ ] Access the commit stash data with `git stash`.
 
 #### Q16. What files is this .gitignore programmed to leave out?
 
@@ -188,28 +190,29 @@ modified: beta-notes.js
 
 #### Q20. What commands would you use to force an overwrite of your local files with the master branch?
 
-- [ ]
+- [ ] ⠀
   ```bash
   git pull --all
   git reset --hard origin/master
   ```
-- [ ]
+- [ ] ⠀
   ```bash
   git pull -u origin master
   git reset --hard master
   ```
-- [ ]
+- [ ] ⠀
   ```bash
   git pull origin master
   git reset --hard origin/myCurrentBranch
   ```
-- [x]
+- [x] ⠀
+
   ```bash
   git fetch --all
   git reset --hard origin/master
   ```
 
-The command `pull` is `fetch` followed by either `merge` or `rebase` (in this case, `merge`). We don't want to merge. Merge would be an action to our **repository**. We just want to overwrite our **local files**.
+- The command `pull` is `fetch` followed by either `merge` or `rebase` (in this case, `merge`). We don't want to merge. Merge would be an action to our **repository**. We just want to overwrite our **local files**.
 
 #### Q21. Which statement is true when you use the git add -A command?
 
@@ -222,8 +225,8 @@ The command `pull` is `fetch` followed by either `merge` or `rebase` (in this ca
 
 - [ ] use git show refs/push-notifications
 - [ ] use git show push-notifications
-- [ ] use git show head/refs/push-notifications
-- [x] use git show refs/head/push-notifications
+- [ ] use git show heads/refs/push-notifications
+- [x] use git show refs/heads/push-notifications
 
 [Reference](https://geedew.com/fixing-git-branch-and-tag-name-collision/)
 
@@ -279,7 +282,7 @@ git push -u origin master
 - [ ] Run git hotfix with the shortcut name.
 - [ ] Assign a shortcut or command using git options file.
 - [ ] Use the git custom-key command.
-- [x] Create an alias in the git config file.
+- [x] Create an alias usin the git config command.
 
 #### Q29. What is the status of the beta-notes.js file in the following output?
 
@@ -374,8 +377,8 @@ modified: beta-notes.js
 - [x] 2
 - [ ] 4
 
-In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase.
-[Reference](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+[Reference link](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+`In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase.`
 
 #### Q41. Which user should be created first during setting up of SSH?
 
@@ -756,14 +759,79 @@ Which of the following options is correct ?
 
 #### Q93. You would like to restore some previously stashed work to a new branch. How can you do that?
 
-- [x] Use `git branch <stash hash>`.
+- [ ] Use git branch <stash hash>.
 - [ ] Add the stashed commits to the current commit, then create a new branch.
-- [ ] Use `git checkout -b`.
-- [ ] Run `git stash branch <branch name>`.
+- [ ] Use git checkout -b.
+- [x] Run git stash branch <branch name>.
 
-#### Q94. You is the difference between git branch -d and git branch -D?
+[reference here](https://stackoverflow.com/questions/6925099/git-stash-changes-apply-to-new-branch)
+
+#### Q94. What is the difference between git branch -d and git branch -D?
 
 - [ ] -D deletes the local branch, while -d deletes the branch regardless of push and merge status.
 - [ ] -d deletes the current commit head, while -D deletes the entire branch.
 - [x] -d deletes the local branch, while -D deletes the local branch regardless of push and merge status.
 - [ ] -D deletes the current commit head, while -d deletes the entire branch.
+
+#### Q95. You stashed three sets of changes but cannot remember the contents of the first stash entry. What command would you use to see the details of the changes in the first of the three stash entries?
+
+- [x] git stash show -p stash@{2}
+- [ ] git stash list
+- [ ] git stash show -p stash@{1}
+- [ ] git stash show -p
+
+[reference here](https://stackoverflow.com/questions/10725729/see-whats-in-a-stash-without-applying-it)
+
+#### Q96. Which statement is true of the git push command?
+
+- [x] By default, a push doesn't send tags to the remote repository.
+- [ ] Only annotated tags are automatically pushed to the remote repository with a commit.
+- [ ] Tags are pushed to the remote repository with their respective commits.
+- [ ] Commits can be tagged only when they are created.
+
+[reference here](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+#### Q97. How would you delete a remote branch in your repository?
+
+- [ ] Use `git --delete <branch_name>`.
+- [ ] Use `git push <remote_name> --d <branch_name>`.
+- [ ] Use `git push <remote_name> --D`.
+- [x] Use `git push <remote_name> --delete <branch_name>`.
+
+[reference here](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)
+
+#### Q98. What is the default setting of `git reflog` when no subcommands are specified?
+
+- [ ] delete
+- [ ] expire
+- [x] show
+- [ ] update
+
+[reference here](https://git-scm.com/docs/git-reflog)
+
+#### Q99. How does the `-p` option change the behavior of the `git add` command
+
+- [ ] It causes tracked files in the parent directory to be included in the staged files.
+- [x] It allows developers to interactively choose which changes to tracked files are staged and outputs the differences for review.
+- [ ] It automatically pushes changes to the corresponding branch on the remote repository.
+- [ ] It allows developers to interactively choose which files are committed and outputs the differences for review.
+
+[reference here](https://git-scm.com/docs/git-add#Documentation/git-add.txt--p)
+
+#### Q100. After checking out a specific commit, you receive a warning message indicating You are in 'detached HEAD' state. What is Git warning you of?
+
+- [x] You are not working on the most recent commit of a branch.
+- [ ] A teammate has flagged the code with an issue.
+- [ ] The commit does not have a parent.
+- [ ] The branch has not been pushed to the remote repository.
+
+[reference here](https://www.git-tower.com/learn/git/faq/detached-head-when-checkout-commit)
+  
+#### Q101. After accidentally deleting a branch in your local repository, how can you recover it?
+
+- [ ] It cannot be recovered.
+- [ ] Find the hash of the branch with the `log` command, then execute `git checkout -b <branchname> <hash>`.
+- [x] Find the hash of the branch with the `reflog` command, then execute `git checkout -b <branchname> <hash>`.
+- [ ] Execute `git checkout -b <branchname>`.
+
+[Reference](https://stackoverflow.com/questions/1992364/git-recover-deleted-remote-branch)

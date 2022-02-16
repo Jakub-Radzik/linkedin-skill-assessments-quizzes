@@ -56,8 +56,7 @@
 - [ ] to visualize queue length
 - [ ] to fulfill a commitment to quality
 
-`Weighted Shortest Job First (WSJF) is a prioritization model used to sequence jobs (eg., Features, Capabilities, and Epics) to produce the maximum economic benefit. In a flow-based system, priorities are updated continuously to provide the best economic outcomes. Job sequencing, rather than individual job return on investment, produces the best result. To that end, WSJF is used to prioritize backlogs by calculating the relative CoD and job size (a proxy for the duration).`
-[(Source)](https://www.scaledagileframework.com/wsjf/)
+[Source](https://www.scaledagileframework.com/wsjf/) `Weighted Shortest Job First (WSJF) is a prioritization model used to sequence jobs (eg., Features, Capabilities, and Epics) to produce the maximum economic benefit. In a flow-based system, priorities are updated continuously to provide the best economic outcomes. Job sequencing, rather than individual job return on investment, produces the best result. To that end, WSJF is used to prioritize backlogs by calculating the relative CoD and job size (a proxy for the duration).`
 
 #### Q9. You have classified the features in your backlog according to risk and value. Which features should the development team work on first?
 
@@ -66,7 +65,7 @@
 - [ ] high-value and low-risk
 - [ ] low-value and low-risk
 
-It is suggested that high business value, high-risk items are worked on first. While that may seem counterintuitive, the earlier this work is done, the sooner the team will move to mitigate the issues and unknowns—leading to a higher quality product. If there's a failure, it will occur early and relatively inexpensively. [(Source)](https://agilescrumguide.com/blog/files/tag-product-backlog---business-value-and-risk.html)
+[Source](https://agilescrumguide.com/blog/files/tag-product-backlog---business-value-and-risk.html) `It is suggested that high business value, high-risk items are worked on first. While that may seem counterintuitive, the earlier this work is done, the sooner the team will move to mitigate the issues and unknowns—leading to a higher quality product. If there's a failure, it will occur early and relatively inexpensively.`
 
 #### Q10. In the Scaled Agile Framework, what is the role of Enablers?
 
@@ -124,21 +123,21 @@ It is suggested that high business value, high-risk items are worked on first. W
 - [ ] risk velocity chart
 - [x] risk burndown graph
 
-#### Q18. The VP of engineering wants to start a Team Member of the Sprint Award to recognize a top performer in each group. What would you advise the VP?
+#### Q18. The VP of Engineering wants to start giving out a "Team Member of the Sprint" award to recognize a top performer in each group. What advice should you give this VP?
 
-- [ ] This is not a good idea unless there has been recent employee feedback that people feel underappreciated.
-- [ ] It is a good idea as long as a different person is recognized in each sprint.
-- [ ] It is a good idea because awards can motivate people to do their best.
-- [x] This is not a good idea because it can destroy the team unity that is essential to achieving high performance.
+- [ ] This is unhelpful unless there has been recent employee feedback indicating that people feel underappreciated.
+- [ ] This is a good idea as long as a different person is recognized in each sprint.
+- [ ] This is a good idea because awards can motivate people to do their best.
+- [x] This is unhelpful because it can destroy the team unity essential to achieving high performance.
 
 #### Q19. What is a difference between a team's task board and a Kanban?
 
-- [x] A Kanban has an explicit rule to limit WIP. (explicit rule applies to scrum team's task board: tasks cannot be added to the scrum board in the middle of a sprint)
+- [x] A Kanban has an explicit rule to limit WIP.
 - [ ] A Kanban shows the backlog of work.
 - [ ] A Kanban does not use a Definition of Done.
 - [ ] A Kanban shows the status of the work items.
 
-[(Source)](https://www.lucidchart.com/blog/kanban-vs-scrum#:~:text=Both%20boards%20are%20used%20to,can%20be%20more%20easily%20adapted.)
+[Source](https://www.lucidchart.com/blog/kanban-vs-scrum#:~:text=Kanban%20vs%20scrum) `Explicit rule applies to scrum team's task board: tasks cannot be added to the scrum board in the middle of a sprint.`
 
 #### Q20. The team complains that "things have been falling through the cracks lately." What should you do?
 
@@ -394,7 +393,7 @@ It is suggested that high business value, high-risk items are worked on first. W
 - [x] the task board
 - [ ] a highly visible display of key performance data
 
-#### Q56. According to the Agile Manifesto, your highest priority is to `**\_\_**`.
+#### Q56. According to the Agile Manifesto, your highest priority is to \_.
 
 - [ ] minimize change requests
 - [x] satisfy the customer
@@ -473,12 +472,13 @@ It is suggested that high business value, high-risk items are worked on first. W
 
 #### Q67. What is the name of the ceremony in which you inspect the work completed during the sprint?
 
-- [ ] Sprint Retrospective (reflect on the previous sprint, discuss what’s working well, what could be improved, and how to improve it to be more productive)
-- [x] Sprint Review (discuss what has been accomplished during the sprint and whether the sprint goal has been met)
+- [ ] Sprint Retrospective
+- [x] Sprint Review
 - [ ] Next-Sprint Planning
 - [ ] Velocity Confirmation
 
-[(Source)](https://startinfinity.com/product-management-framework/scrum-sprint/sprint-review-vs-sprint-retrospective)
+`Sprint Retrospective: Reflect on the previous sprint, discuss what’s working well, what could be improved, and how to improve it to be more productive.`
+[Source](https://startinfinity.com/product-management-framework/scrum-sprint/sprint-review-vs-sprint-retrospective) `Sprint Review: Discuss what has been accomplished during the sprint and whether the sprint goal has been met.`
 
 #### Q68. Which choice best describes an Agile Release Train (ART)?
 
@@ -515,8 +515,7 @@ It is suggested that high business value, high-risk items are worked on first. W
 - [ ] The stakeholders are ready to discuss their requirements for story.
 - [ ] The team has completed sprint 0 and is ready to work.
 
-`Definition of Ready means that stories must be immediately actionable. The Team must be able to determine what needs to be done and the amount of work required to complete the User Story.`
-[(Source)](https://www.scruminc.com/definition-of-ready/#:~:text=Having%20a%20Definition%20of%20Ready,the%20User%20Story%20or%20PBI.)
+[Source](https://www.scruminc.com/definition-of-ready/) `Definition of Ready means that stories must be immediately actionable. The Team must be able to determine what needs to be done and the amount of work required to complete the User Story.`
 
 #### Q73. Which is NOT a principle of the Scaled Agile Framework?
 
@@ -545,3 +544,98 @@ It is suggested that high business value, high-risk items are worked on first. W
 - [ ] Embrace servant leadership.
 - [ ] Remove impediments
 - [x] Estimate story points.
+
+#### Q77. The team is complaining that they send request for clarification to the Product Owner, but these requests go unanswered. What action should you take?
+
+- [ ] If there is a question about story, tell the developers to use their best judgement, avoid delay, and discuss the issue in sprint review.
+- [ ] Send a note to the Product Owner saying the delays in completing the work will be their responsibility, not the team's.
+- [ ] Develop a service-level agree (SLA) that defines certain response times for different types of request and ask the Product Owner to sign off on it.
+- [x] Schedule a problem-solving session with the Product Owner and the other team members.
+
+#### Q78. Which choice is a pillar of Lean?
+
+- [ ] Frequent delivery of working software
+- [x] Respect for people and culture
+- [ ] Courage
+- [ ] Sustainable pace
+
+[Source](https://www.planview.com/resources/guide/lean-principles-101/what-is-lean/#:~:text=The%20Pillars%20of%20Lean) `Two pillars are (1) Continuous Improvement, and (2) Respect for People.`
+
+#### Q79. Which statement best describes Agile, Lean, and Six Sigma?
+
+- [ ] They are strategies for delivering customer value.
+- [ ] They were pioneered by Toyota.
+- [ ] They are strategies for discovering what the customer wants.
+- [ ] They are derived from statistical process control.
+
+#### Q80. What is a user story?
+
+- [ ] A description of what an actor wants to do in order to accomplish a goal
+- [ ] A description of archetypal users so the developers can make the solution user-friendly
+- [ ] A report from the field about a user's experience with the product
+- [x] The Agile term for a requirement
+
+#### Q81. What is the expected output of a Planning Poker meeting?
+
+- [x] The stories were discussed and each had a story point estimate assigned.
+- [ ] The team gave feedback to the Product Owner about the acceptance criteria.
+- [ ] The team decided what stories should be developed within the same sprint.
+- [ ] The team made a preliminary plan for which stories will be completed in the next quarter.
+
+#### Q82. What is the definition of velocity?
+
+- [x] The number of story points delivered during a sprint
+- [ ] The average waiting time for a story on the sprint backlog
+- [ ] The average wait time for a story to move from the product backlog to the sprint backlog
+- [ ] The time it takes a developer to complete a story divided by its relative value
+
+#### Q83. What is most important for a successful Product Owner to understand?
+
+- [ ] The budget for the product.
+- [ ] The underlying technology of the product.
+- [ ] The development team's strengths and weaknesses.
+- [x] The business context for the product.
+
+[Source](https://premieragile.com/how-does-a-product-owner-measure-value) `A Scrum Team has 3 roles - Product Owner, Scrum Master and Developers. All 3 roles generate Value in their own contexts; however, it is the Product Owner who maximizes the Value from a product or business context.`
+
+#### Q84. Which statement about the Agile Manifesto is true?
+
+- [ ] It was written via crowdsourcing and its authors are unknown.
+- [x] It has been translated into dozens of languages and used around the world.
+- [ ] It was written in 2001 and is obsolete.
+- [ ] It was first published as part of Jim Highsmith's doctoral thesis.
+
+#### Q85. The team is not going to complete its Spring Commitment. As the Team Facilitator, what should you do?
+
+- [ ] Ask the PO to extend the sprint.
+- [ ] Advise the PO as soon as possible.
+- [ ] Report this at the Sprint Review.
+- [ ] Point out the reasons why and collaborate on solutions.
+
+#### Q86. When a user story is further decomposed, what are the elements called?
+
+- [ ] technical tasks
+- [ ] actors and actions
+- [x] Who, What, Why
+- [ ] threads
+
+#### Q87. What does collective ownership mean?
+
+- [ ] Every member of the team can make changes to any part of the code as necessary.
+- [ ] If someone is at fault, then the whole team is at fault.
+- [x] The team shares equally in the profits that the product generates.
+- [ ] The team, not the individuals, receive performance evaluations.
+
+#### Q88. According to the Agile Manifesto, how often should developers and business people work together?
+
+- [ ] as often as needed
+- [ ] biweekly
+- [x] daily
+- [ ] weekly
+
+#### Q89. What do you call the practice of writing a test before the code is written?
+
+- [ ] design for testability
+- [x] test-driven development
+- [ ] unit testing
+- [ ] test then code

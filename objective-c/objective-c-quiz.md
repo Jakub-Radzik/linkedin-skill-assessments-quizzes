@@ -49,7 +49,7 @@ NSInteger i = str.integerValue;
 - [ ] 1,2
 - [ ] Nothing, since this code contains an error.
 
-#### Q5. Property defaults include `**\_\_\_**`?
+#### Q5. Property defaults include \_?
 
 - [x] atomic/strong
 - [ ] atomic/weak
@@ -181,7 +181,7 @@ NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]
 - [ ] It is inline.
 - [ ] This code contains an error.
 
-#### Q19. Structs can have `**\_\_\_**`?
+#### Q19. Structs can have \_?
 
 - [ ] functions
 - [ ] initializers
@@ -279,7 +279,7 @@ foo(5);
 - [ ] Sets are ordered, unique values.
 - [ ] Sets can contain nils.
 
-#### Q29. Dot notation can be used for `**\_\_\_**`?
+#### Q29. Dot notation can be used for \_?
 
 - [ ] nothing, as they're never used in Objective-C
 - [ ] function calls only
@@ -382,3 +382,38 @@ dispatch_async(dispatch_get_main_queue(), ^{
 - [ ] It is the last code to run before the app goes inactive.
 - [ ] It executes on a background thread.
 - [ ] It is queued to execute in the background.
+
+#### Q38. How many items are in set1 after this code executes?
+
+```
+NSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];
+[set1 add0bject:@3];
+```
+
+- [ ] zero
+- [ ] six
+- [ ] one
+- [x] five
+
+#### Q39. What is wrong with this code?
+
+```
+NSDictionary *d1 = @[@"v1", @4, @"v2", @5.6, @"v3"];
+NSlog(@"d1: %@", d1);
+```
+
+- [ ] NSDictionary cannot be printed this way.
+- [x] The last key is missing a value.
+- [ ] Dictionaries cannot have mixed types as values.
+- [ ] d1 is assigned an NSArray of values.
+
+#### Q40. What is the initial value of the property `val`?
+
+```
+@property (nonatomic, readonly) int val;
+```
+
+- [ ] 8
+- [ ] nil
+- [ ] -1
+- [ ] undefined

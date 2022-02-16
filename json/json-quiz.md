@@ -23,13 +23,13 @@
 ["red", "blue", "green"]
 ```
 
-- [x]
+- [ ]
 
 ```json
 ["red", "blue", "green"]
 ```
 
-- [ ]
+- [x]
 
 ```json
 {
@@ -221,7 +221,7 @@
 - [ ] NaN
 - [x] null
 
-#### Q16. Which JavaScript method converts a Json to JavaScript value?
+#### Q16. Which JavaScript method converts JSON to a JavaScript value?
 
 - [x] JSON.parse()
 - [ ] JSON.stringify()
@@ -307,10 +307,10 @@
 
 #### Q22. Which is an invalid JSON value?
 
-- [ ] "'|=(_)(X 72(_)|\/||\*'"
-- [ ] "|=(_)(X 72(_)|\/||\*"
-- [ ] "|=(_)(X\" \"72(_)|\/||\*"
-- [x] "\s(_)(X 72(_)|\/||\*"
+- [ ] `"'|=(_)(X 72(_)|\/||\*'"`
+- [ ] `"|=(_)(X 72(_)|\/||\*"`
+- [ ] `"|=(_)(X\" \"72(_)|\/||\*"`
+- [x] `"\s(_)(X 72(_)|\/||\*"`
 
 #### Q23. How do you encode a date in JSON?
 
@@ -394,7 +394,7 @@ null
 - [ ] `constant: 6.022E23`
 - [ ] `constant: "6.022E23"`
 
-Explanation: Scientific Notation is a valid JSON number. You can use `e` or `E`. [(Reference)](https://json-schema.org/understanding-json-schema/reference/numeric.html)
+[Reference](https://json-schema.org/understanding-json-schema/reference/numeric.html) **Explanation**: Scientific Notation is a valid JSON number. You can use `e` or `E`.
 
 #### Q29. Which element is added to the DOM to create a JSON-P request?
 
@@ -471,7 +471,7 @@ Explanation: Scientific Notation is a valid JSON number. You can use `e` or `E`.
 }
 ```
 
-#### Q32. When building dynamic web applications using AJAX, developers originally used the \_\_\_\_ data format, which has since been replaced by JSON.
+#### Q32. When building dynamic web applications using AJAX, developers originally used the \_ data format, which has since been replaced by JSON.
 
 - [x] XML
 - [ ] GRAPHQL
@@ -567,7 +567,8 @@ Note: None of the above options appear to be correct. A correct answer would be 
 - [ ] UPC: "043875"
 - [ ] "UPC": 043875
 - [ ] UPC: '043875'
-      **NONE OF THESE ARE CORRECT A CORRECT ANSWER WOULD LOOK LIKE `"UPC": "043875"`**
+
+**NONE OF THESE ARE CORRECT A CORRECT ANSWER WOULD LOOK LIKE `"UPC": "043875"`**
 
 #### Q44. Which data format is a JSON schema written in?
 
@@ -769,3 +770,135 @@ Note: None of the above options appear to be correct. A correct answer would be 
 - [ ] ->
 - [ ] ::
 - [ ] .
+
+#### Q69. What is the purpose of JSON?
+
+- [x] to provide a simple way to serialize and deserialize data between different sources
+- [ ] to provide a way to store data for machine learning
+- [ ] to provide an archival solution for data warehousing
+- [ ] to provide a way for JavaScript to run other languages
+
+#### Q70. Can you assume the order of keys in an object?
+
+- [x] No, but you can sort the keys with `JSON.sort()`.
+- [ ] Yes, object keys are always ordered alphabetically.
+- [ ] Yes, but only when the object is first parsed.
+- [ ] No, you can never assume object keys will be in order.
+
+#### Q71. With what character should object keys be enclosed?
+
+- [ ] `*`
+- [ ] `#`
+- [ ] `^`
+- [x] `"`
+
+#### Q72. What is the maximum number of key/value pairs that JSON supports?
+
+- [ ] 10,000
+- [ ] 1000
+- [x] There is no defined limit.
+- [ ] 1 million
+
+#### Q73. What is the recommended term used to refer to multiple resources?
+
+- [ ] a swarm
+- [x] multiple resources
+- [ ] a collection
+- [ ] a group
+
+#### Q74. Does JSON support signed numbers?
+
+- [ ] yes, but only if they are enclosed in quotes
+- [ ] only with integers
+- [x] no
+- [ ] yes
+
+#### Q75. What two nonnumerical characters can numbers contain?
+
+- [x] dash and dot
+- [ ] dash and comma
+- [ ] comma and exclamation point
+- [ ] dot and comma
+
+#### Q76. What JavaScript method is used to load JSON data?
+
+- [ ] JSON.ingest()
+- [ ] JSON.convert()
+- [ ] JSON.read()
+- [x] JSON.parse()
+
+#### Q77. How are the values in an array separated?
+
+- [ ] with right arrows
+- [ ] with colons
+- [ ] with semicolons
+- [x] with commas
+
+#### Q78. What is the minimum number of values in an array?
+
+- [x] zero
+- [ ] one
+- [ ] two
+- [ ] three
+
+#### Q79. In JSON, a set of brackets ([]) is used to denote **\_**, whereas curly braces ({}) denote **\_**.
+
+- [x] arrays; objects
+- [ ] objects; functions
+- [ ] arrays; functions
+- [ ] key/value pairs; arrays
+
+#### Q80. How does JSON represent truth, falsity and nullness?
+
+- [x] true, false, null
+- [ ] true, false
+- [ ] TRUE, FALSE, NULL
+- [ ] true, false, null
+
+### Q81. Which character _cannot_ be part of string data within JSON without additional formatting?
+
+- [ ] /
+- [x] "
+- [ ] :
+- [ ] \-
+
+### Q82. If an object key contains spaces, how can you access its value in JavaScript?
+
+- [ ] Remove spaces from the key before accessing the value.
+- [ ] Use dot notation to access the value.
+- [ ] Use object key index to access the value.
+- [x] Use bracket notation to access the value.
+
+### Q83. When parsing JSON, "caching" is a method used to \_.
+
+- [ ] remove duplicate data from a server
+- [x] temporarily store data for faster access
+- [ ] store excess information in chunks to be reviewed later
+- [ ] clog up a web browser with useless information
+
+### Q84. What is the only valid whitespace character within a string that does not require an escape character?
+
+- [ ] line break
+- [x] space
+- [ ] tab
+- [ ] return
+
+### Q85. What technique can you use to safely encode very large numbers?
+
+- [x] Store the number as a string
+- [ ] Convert the number into an exponent.
+- [ ] Round the number to the nearest 10-digit number.
+- [ ] Split the number into smaller parts.
+
+### Q86. Which code is a valid JSON equivalent of the key/value pair shown that also preserves the data type?
+
+```json
+variance: -0.0823
+```
+
+- [ ] variance: "-0.0823"
+- [ ] variance: -0.0823
+- [x] "variance": "-0.0823"
+- [ ] "variance": "\-0.0823"
+
+[Reference data types in json](https://www.w3schools.com/js/js_json_datatypes.asp)

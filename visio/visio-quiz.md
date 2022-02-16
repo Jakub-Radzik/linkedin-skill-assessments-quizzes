@@ -55,7 +55,7 @@
 - [ ] Microsoft SQL Server database
 - [ ] Microsoft SharePoint Foundation list
 
-#### Q5. A rack diagram is an example of a \_\_\_, one in which the size of the shapes on the page is dependent on the size and scale of the page itself.
+#### Q5. A rack diagram is an example of a \_, one in which the size of the shapes on the page is dependent on the size and scale of the page itself.
 
 - [x] two-dimensional drawing
 - [ ] units drawing
@@ -303,3 +303,10 @@
 - [x] .dwg
 - [ ] .xps
 - [ ] .pdf
+
+#### Q35.Which of the following is a type of shape data list from which users can select an entry or can enter a new value?
+
+- [ ] Visio list
+- [ ] list
+- [x] variable list
+- [ ] fixed list

@@ -56,7 +56,7 @@ Note: Free trial doesn't have the organizations.
 - [ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use GPU.
 - [x] Create a notebook instance with TPU. Upload the notebook to the instance.
 - [ ] Create a notebook instance with GPU. Upload the notebook to the instance.
-- [ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator yo use TPU.
+- [ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use TPU.
 
 #### Q9. You need to configure a data retention policy for a Cloud Storage bucket to govern how long objects in the bucket must be retained. What feature do you enable?
 
@@ -120,13 +120,6 @@ Note: Free trial doesn't have the organizations.
 - [ ] MySQL and Oracle
 - [ ] Redis and PostgreSQL
 - [x] MySQL and PostgreSQL
-
-#### Q18. You want to try out a machine-learning TensorFlow example notebook with the fewest configuration steps on GCP. What do you do?
-
-- [ ] Create a notebook instance with TPU. Upload the notebook to the instance.
-- [x] Create a notebook instance with GPU. Upload the notebook to the instance.
-- [ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use GPU.
-- [ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use TPU.
 
 #### Q19. You want to quickly test a single Docker container image that will start a stateless HTTP service on GCP. Which service do you select to host your container image?
 
@@ -237,7 +230,7 @@ Note: Free trial doesn't have the organizations.
 
 - [ ] group
 - [ ] folder
-- [ ] project
+- [x] project
 - [ ] organization
 
 #### Q35. What is needed to access GCP APIs in your project?
@@ -296,3 +289,111 @@ Note: Free trial doesn't have the organizations.
 - [ ] Specify a decryption key and version with the same name as the encryption key and version. The name key and that version must be enabled.
 - [ ] Specify the decryption key with the same name as the encryption key. The named key and that version must be enabled.
 - [ ] Specify a decryption key and version with the same name as the encryption key and version. At least one version of a key with that name must be enabled.
+
+#### Q43. You want to encrypt a Compute Engine. What do you need to do?
+
+- [x] Nothing. Images are encrypted by default with a Google-managed key.
+- [ ] Nothing. Images are encrypted by default with a customer-managed key.
+- [ ] Associate you image with a customer-managed key to encrypt it.
+- [ ] Associate you image with a Google-managed key to encrypt it.
+
+[Reference](https://cloud.google.com/compute/docs/disks/customer-supplied-encryption)
+
+#### Q44. You want to quickly evaluate Cloud Filestore. What are the steps, in order, to set up a test environment?
+
+- [ ]
+  ```
+  1. Create a Filestore instance.
+  2. Mount the fileshare from that instance on a client VM instance.
+  3. Create a Compute Instance VM to be the client.
+  4. Create a file on the mounted fileshare.
+  ```
+- [ ]
+  ```
+  1. Create a Filestore instance.
+  2. Mount the fileshare from that instance on a client VM instance.
+  3. Create a file on the mounted file share.
+  4. Create a Compute Instance VM to be the client.
+  ```
+- [x]
+  ```
+  1. Create a Compute Instance VM to be the client.
+  2. Create a Filestore instance.
+  3. Mount the file share from that instance on a client VM instance.
+  4. Create a file on the mounted fileshare.
+  ```
+- [ ]
+  ```
+  1. Create a Compute Instance VM to be the client.
+  2. Create a Cloud Filestore instance.
+  3. Mount the fileshare from that instance on a client VM instance.
+  4. Create a file on the mounted file share.
+  ```
+
+[Reference](https://cloud.google.com/filestore/docs/quickstart-console)
+
+#### Q45. You need to optimize spending for always-on Compute Engine virtual machines of certain sizes and types-with minimum effort. What do you do?
+
+- [ ] Analyze machine usage to verify that machines will be on for more that 25% of the time, and verify that contained use discounts have been automatically applied to your bill.
+- [x] Analyze machine usage to verify that machines will be on for more that 25% of the time, and verify that sustained use discounts have been automatically applied to your bill.
+- [ ] Analyze machine usage to verify that machines will be on for more than 25% of the time and purchase contained use discounts.
+- [ ] Analyze machine usage to verify that machines will be on for more than 25% of the time and purchase sustained use discounts.
+
+[Reference](https://cloud.google.com/compute/docs/sustained-use-discounts)
+
+#### Q46. You are designing a GCP replacement for your on-premises data warehouse. Which service do you select?
+
+- [ ] Cloud SQL
+- [ ] Bigtable
+- [ ] Cloud Spanner
+- [x] BigQuery
+
+#### Q47. How can you quickly back up a persistent disk on Compute Engine?
+
+- [x] Take a snapshot
+- [ ] Create an instance group
+- [ ] Create an instance template
+- [ ] Create an image
+
+#### Q48. You are implementing IAM roles for your organization following GCP best practice. Which statement best reflects this?
+
+- [ ] At minimum, you should have two levels of access: one for admins, one for users.
+- [ ] At minimum, you should have three levels of access: one for networking, one for security, one for developers.
+- [x] At minimum, you should have three levels of access: one for admins, one for security, one for users.
+- [ ] At minimum, you should have two levels of access: one for networking, one for developers.
+
+#### Q49. You need to quickly build an application that logs all file uploads to a Cloud Storage bucket. Which service do you select?
+
+- [x] Cloud Functions
+- [ ] Cloud Run
+- [ ] Google Kubernetes Engine
+- [ ] Google Compute Engine
+
+[Reference](https://cloud.google.com/functions#all-features)
+
+#### Q50. You need to answer the question "How long does it take my application to handle a given request?" What do you do?
+
+- [ ] Configure Stackdriver Error Reporting.
+- [ ] Configure Stackdriver Profiler.
+- [x] Configure Stackdriver Trace.
+- [ ] Configure Stackdriver Debug.
+
+[Reference](https://stackoverflow.com/questions/69434714/how-to-use-stackdriver-on-gcp-to-get-how-long-does-it-take-to-process-a-request)
+
+#### Q51. You want to select a fully managed, serverless platform for developing and hosting web applications at scale on GCP. Which service should you choose?
+
+- [x] Google App Engine.
+- [ ] Cloud Functions.
+- [ ] Google Kubernetes Engine.
+- [ ] Google Compute Engine.
+
+#### Q52. You have a set of exploratory queries that you want to run as inexpensively as possible in BigQuery. What should you do?
+
+- [ ] Set the job priority for each query to Batch and expect to see query results immediately.
+- [x] Set the job priority for each query to Interactive and expect to see query results immediately.
+- [ ] Set the job priority for each query to Batch and expect to see query results within 24 hours.
+- [ ] Set the job priority for each query to Batch and expect to see query results within 24 hours.
+
+Explanation: _BigQuery offers a choice of two pricing models for runnig queries: on-demand (you are charged for the number of bytes processes by each query) and flat-rate (you purchase slots - dedicated processing capacity)._ If the exploratory queries are one-off, running in Interactive mode using on-demand pricing seems to be the optimal answer.
+
+[Reference](https://cloud.google.com/bigquery/pricing)

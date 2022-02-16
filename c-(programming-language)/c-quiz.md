@@ -1,33 +1,44 @@
 ## C (Programming Language)
 
-##### Q1. Which Code sample will eventually cause the computer to run out of memory ?
+##### Q1. Which Code sample will eventually cause the computer to run out of memory?
 
-- [x] ````c
-          while(1)
-          {
-              char *smallString = (char *) malloc(10);
-          }
-      ````
-- [ ] ````c
-          long long number = 1;
-          while(1)
-              number *= 2;
-      ````
-- [ ] ````c
-          while(1)
-          {
-              char hugeString[1000000L];
-              memset(hugeString, 0, 1000000L);
-          }
-      ````
-- [ ] ````c
-          while(1)
-          {
-              long *bigArray = (long *) malloc(sizeof(long) * 1000);
-              memset(bigArray, 1000000, 1000);
-              free(bigArray);
-          }
-      ````
+- [x]
+
+```c
+while(1)
+{
+    char *smallString = (char *) malloc(10);
+}
+```
+
+- [ ]
+
+```c
+long long number = 1;
+    while(1)
+    number *= 2;
+```
+
+- [ ]
+
+```c
+while(1)
+{
+    char hugeString[1000000L];
+    memset(hugeString, 0, 1000000L);
+}
+```
+
+- [ ]
+
+```c
+while(1)
+{
+    long *bigArray = (long *) malloc(sizeof(long) * 1000);
+    memset(bigArray, 1000000, 1000);
+    free(bigArray);
+}
+```
 
 #### Q2. What will this code print on the screen?
 
@@ -53,16 +64,29 @@ main()
 }
 ```
 
-- [x] A is greater then B
-      C is fun!
-- [ ] A is greater then B
-      B is greater then A
-      C is fun!
+- [x]
 
-- [ ] A is greater then B
-      B is greater then A
+```
+A is greater then B
+C is fun!
+```
 
-- [ ] Northing is printed on Screen
+- [ ]
+
+```
+A is greater then B
+B is greater then A
+C is fun!
+```
+
+- [ ]
+
+```
+A is greater then B
+B is greater then A
+```
+
+- [ ] Nothing is printed on Screen
 
 #### Q3. What is the name for calling a function inside the same function?
 
@@ -121,34 +145,41 @@ struct s {
 
 #### Q8. Using a for loop, how could you write a C code to count down from 10 to 1 and display each number on its own line?
 
-- [ ] ````c
-          for (int i = 0; i>=0, i--){
-              printf("%d\n", i);
-          }//end of loop
-          ```
-      ````
-- [ ] ````c
-          int i;
-          for (i=1; i<=10; i++){
-              printf("%d", i);
-          }
-          ```
-      ````
-- [ ] ````c
-          int i = 10;
-          while (i>0){
-              printf("%d\n", i);
-              i--;
-          }
-          ```
-      ````
-- [x] ````c
-          int i;
-          for (i= 10; i>0; i--){
-              printf("%d\n", i);
-          }// end of loop
-          ```
-      ````
+- [ ]
+
+```c
+for (int i = 0; i>=0, i--){
+    printf("%d\n", i);
+}//end of loop
+```
+
+- [ ]
+
+```c
+int i;
+for (i=1; i<=10; i++){
+    printf("%d", i);
+}
+```
+
+- [ ]
+
+```c
+int i = 10;
+while (i>0){
+    printf("%d\n", i);
+    i--;
+}
+```
+
+- [x]
+
+```c
+int i;
+for (i= 10; i>0; i--){
+    printf("%d\n", i);
+}// end of loop
+```
 
 #### Q9. What is not one of the reserved words in standard C?
 
@@ -156,6 +187,8 @@ struct s {
 - [x] typeof
 - [ ] register
 - [ ] typedef
+
+[Reference](https://www.ibm.com/docs/en/adfz/developer-for-zos/14.2.0?topic=programs-c-reserved-keywords)
 
 #### Q10. What does the program shown below return?
 
@@ -211,6 +244,8 @@ main(){
 - [x] main() { }
 - [ ] main() { ; }
 
+[Reference](https://www.beningo.com/150-the-wolrds-shortest-c-program/)
+
 #### Q14. What is optional in a function declaration?
 
 - [ ] data type of parameters
@@ -232,12 +267,16 @@ main(){
 - [x] heap
 - [ ] data segment
 
+[Reference](http://www.it.uc3m.es/pbasanta/asng/course_notes/dynamic_memory_heap_en.html#:~:text=The%20dynamic%20memory%20that%20is,reads%20a%20set%20of%20words.)
+
 #### Q17. Which of the following do you use to deallocate memory?
 
 - [ ] dalloc()
 - [ ] dealloc()
 - [ ] release()
 - [x] free()
+
+[Reference](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm)
 
 #### Q18. In C language what are the basic building blocks that are constructed together to write a program?
 
@@ -295,47 +334,54 @@ main() {
 char *string[20] = { "one", "two", "three"};
 ```
 
-- [ ] printf("%c", string[1][2]);
-- [x] printf("%s", string[1][2]);
-- [ ] printf("%s", string[1]);
-- [ ] printf(string[1]);
+- [ ] `printf("%c", string[1][2]);`
+- [x] `printf("%s", string[1][2]);`
+- [ ] `printf("%s", string[1]);`
+- [ ] `printf(string[1]);`
 
 #### Q25. What is the expression player->name equivalent to?
 
-- [ ] player.name
-- [x] (\*player).name
-- [ ] \*player.name
-- [ ] player.\*name
+- [ ] `player.name`
+- [x] `(\*player).name`
+- [ ] `\*player.name`
+- [ ] `player.\*name`
 
 #### Q26. Which program will compile and run without errors?
 
-- [ ] ````c
-          main() {
-              for(i=0; i<10; i++) ;
-          }
-          ```
-      ````
-- [x] ````c
-          main() {
-              int i=0;
-              for(; i<10; i++) ;
-          }
-          ```
-      ````
-- [ ] ````c
-          main() {
-              int i;
-              for(i=0; i<j; i++) ;
-          }
-          ```
-      ````
-- [ ] ````c
-          main() {
-              int i;
-              for (i= 10; i<10; i++)
-          }
-          ```
-      ````
+- [ ]
+
+```c
+main() {
+    for(i=0; i<10; i++) ;
+}
+```
+
+- [x]
+
+```c
+main() {
+int i=0;
+    for(; i<10; i++) ;
+}
+```
+
+- [ ]
+
+```c
+main() {
+    int i;
+    for(i=0; i<j; i++) ;
+}
+```
+
+- [ ]
+
+```c
+main() {
+int i;
+    for (i= 10; i<10; i++)
+}
+```
 
 #### Q27. What does this function call return?
 
@@ -391,3 +437,346 @@ int main() {
 - [ ] true (1) if str1 and str2 are the same, false (0) if str1 and str2 are not the same
 - [ ] true (1) if str1 and str2 are the same, NULL if str1 and str2 are not the same
 - [ ] 0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1
+
+#### Q33. What is the output of this program?
+
+```c
+int a=10, b=20;
+int f1(a) { return(a*b); }
+main() {
+printf("%d", f1(5));
+}
+```
+
+- [x] 100
+- [ ] 200
+- [ ] 5
+- [ ] 50
+
+#### Q34. Which is _not_ a correct way to declare a string variable?
+
+- [ ] `char *string = "Hello World";`
+- [x] `char string = "Hello World";`
+- [ ] `char string[20] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};`
+- [ ] `char string[] = "Hello World";`
+
+#### Q35. Which choice is an include guard for the header file mylib.h?
+
+- [ ]
+
+```c
+#ifdef MYLIB_H
+#undef MYLIB_H
+
+// mylib.h content
+
+#endif /* MYLIB_H */
+```
+
+- [x]
+
+```c
+#ifndef MYLIB_H
+#define MYLIB_H
+
+// mylib.h content
+
+#endif /* MYLIB_H */
+```
+
+- [ ]
+
+```c
+#define MYLIB_H
+#include "mylib.h"
+
+#undef MYLIB_H
+```
+
+- [ ]
+
+```c
+#ifdef MYLIB_H
+#define MYLIB_H
+
+// mylib.h content
+
+#endif /* MYLIB_H */
+```
+
+#### Q36. How many times does the code inside the while loop get executed in this program?
+
+```c
+main(){
+ int x=1;
+ while(x++<100){
+    x*=x;
+    if(x<10) continue;
+    if(x>50) break
+ }
+}
+```
+
+- [ ] 100
+- [x] 3
+- [ ] 5
+- [ ] 50
+
+#### Q37. File input and output (I/O) in C is done through what?
+
+- [ ] syntax-driven components
+- [ ] native interfaces
+- [ ] system objects
+- [x] function calls
+
+#### Q38. Directives are translated by the?
+
+- [x] Pre-processor
+- [ ] Compiler
+- [ ] Linker
+- [ ] Editor
+
+#### Q39. The main loop structures in C programming are the for loop, the while loop, and which other loop?
+
+- [x] do...while
+- [ ] for...in
+- [ ] repeat...until
+- [ ] do...until
+
+#### Q40. By default, C Functions are what type of functions?
+
+- [ ] global
+- [ ] static
+- [x] library
+- [ ] system
+
+#### Q41. You have written a function that you want to include as a member of structure a. How is such as structure member defiened?
+
+- [x]
+
+```c
+struct a {
+    void *f1;
+};
+```
+
+- [ ]
+
+```c
+struct a {
+    void (*f1)();
+};
+```
+
+- [ ]
+
+```c
+struct a {
+    *(void *f1)();
+};
+```
+
+- [ ]
+
+```c
+struct a {
+    void *f1();
+};
+```
+
+#### Q42. A Stack data structure allows all data operations at one end only, making it what kind of an implementation?
+
+- [ ] FIFO
+- [x] LIFO
+- [ ] LILO
+- [ ] LOLI
+
+#### Q43. What does this program display?
+
+```c
+main(){
+    char *p = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int i;
+    for (i=0;i<5;i++) *p++; *p++;
+    printf("%c",*p++);
+}
+```
+
+- [ ] K
+- [ ] M
+- [ ] H
+- [x] G
+
+#### Q44. Describe the relationship between lvalue and rvalue.
+
+- [ ] An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear only on the right-hand side.
+- [ ] An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear on either the left-hand or right-hand side.
+- [ ] An lvaue and an rvalue may appear on either left-hand or right-hand side of an assignment.
+- [x] An lvalue may appear on the left-hand or right-hand side of an assignment; an rvalue may appear only on the right-hand side.
+
+#### Q45. Which operator is used to access the address of a variable?
+
+- [ ] `%`
+- [ ] `**`
+- [ ] `*`
+- [x] `&`
+
+#### Q46. Which add function properly returns the updated value of result?
+
+- [x]
+
+```c
+void add (int a, int b, int *result)
+{
+    *result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(a,b,&result);
+}
+```
+
+- [ ]
+
+```c
+void add (int a, int b, int result)
+{
+    result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(a,b,result);
+}
+```
+
+- [ ]
+
+```c
+void add (int a, int b, int *result)
+{
+    result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(a,b,result);
+}
+```
+
+- [ ]
+
+```c
+void add (int *a, int *b, int *result)
+{
+    result = a+b;
+}
+
+main()
+{
+    int a = 10;
+    int b = 20;
+    int result = 0;
+
+    add(*a,*b,*result);
+}
+```
+
+#### Q47. Consider the number of the Fibonacci series below 100: 0,1,1,2,3,5,8,13,21,34,55,89. Which piece of code outputs the sequence?
+
+- [ ]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", a);
+
+    fibonacci(a,b);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+- [ ]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", b);
+
+    fibonacci(a,c);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+- [x]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", a);
+
+    fibonacci(b,c);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```
+
+- [ ]
+
+```c
+void fibonacci(int a, int b)
+{
+    int c = a+b;
+
+    if(a>100)
+       return;
+
+    printf("%d", c);
+
+    fibonacci(b,c);
+}
+
+int main()
+{
+    fibonacci(0,1);
+}
+```

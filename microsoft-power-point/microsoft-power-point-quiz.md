@@ -13,7 +13,8 @@
 - [x] Arrange tools
 - [ ] Design Ideas feature
 - [ ] Picture tools
-      `In MS PP 2019 it's called "Drawing Tools". There is no such answer but there is a function called "Arrange"`
+
+`In MS PP 2019 it's called "Drawing Tools". There is no such answer but there is a function called "Arrange"`
 
 #### Q3. Which option must be enabled if you want to manipulate the playback of a video file during a presentation?
 
@@ -35,7 +36,8 @@
 - [ ] the Home tab
 - [x] the Print dialog box
 - [ ] the Share tab
-      `Should be in the printer window not in the options menu`
+
+`Should be in the printer window not in the options menu`
 
 #### Q6. Which tab is best for adding various types of objects to slides?
 
@@ -57,7 +59,8 @@
 - [ ] slide titles
 - [ ] missing alt text
 - [x] grammar
-      [Source](https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1?ns=powerpnt&version=16&ui=en-us&rs=en-us&ad=us)
+
+[Source](https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1?ns=powerpnt&version=16&ui=en-us&rs=en-us&ad=us)
 
 #### Q9. How can you change the appearance of a table in one click?
 
@@ -96,7 +99,8 @@ E. Distance
 - [ ] Advance slides manually
 - [ ] Advance slides automatically
 - [x] Loop continuously until 'Esc'
-      `Slide Show Tab -> Set Up Slide Show -> Show options -> Loop continuously until 'Esc'`
+
+`Slide Show Tab -> Set Up Slide Show -> Show options -> Loop continuously until 'Esc'`
 
 #### Q13. Which statement about the Compress Pictures command is true?
 
@@ -132,9 +136,7 @@ If your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will
 - [ ] none of these answers
 - [ ] Visible
 
-```
-If hidden is selected the courser stays hidden no matter what.
-```
+`If hidden is selected the courser stays hidden no matter what.`
 
 #### Q17. Which chart type is best suited for displaying annual financial data for a 10-year period?
 
@@ -178,12 +180,9 @@ If hidden is selected the courser stays hidden no matter what.
 - [x] Remove picture compression.
 - [ ] Change the printer property settings to print in a higher resolution.
 
-```Personal Hint:
-File Tab -> Options -> Advanced -> Image Size and Quality -> Do not compress images in file
-File Tab -> Options -> Advanced -> Print -> High quality
-```
+`Personal Hint: File Tab -> Options -> Advanced -> Image Size and Quality -> Do not compress images in file File Tab -> Options -> Advanced -> Print -> High quality `
 
-#### Q23. You have inserted a video on a slide and want the video to automaaticlly start 2 seconods after the associated slide appears. How can you accomplish this?
+#### Q23. You have inserted a video on a slide and want the video to automatically start 2 seconds after the associated slide appears. How can you accomplish this?
 
 - [ ] Use playback timings.
 - [x] Use animation timings.
@@ -253,9 +252,7 @@ File Tab -> Options -> Advanced -> Print -> High quality
 - [ ] Save the file as a POTX.
 - [ ] Save the file as a PPTX.
 
-```
-Personal Hint: There are multiple file suffixes for templates (.potx, .potm, .pot).
-```
+`Personal Hint: There are multiple file suffixes for templates (.potx, .potm, .pot).`
 
 #### Q33. You are creating an industrial presentation of a new software program and would like to include an image of your program. How can you use PowerPoint to do this?
 
@@ -308,7 +305,7 @@ Personal Hint: There are multiple file suffixes for templates (.potx, .potm, .po
 
 #### Q40. How can you format the entire contents of a text box?
 
-- [ ] Click the dashed/dotted border of the text box.
+- [x] Click the dashed/dotted border of the text box.
 - [ ] Right-click the text box and select Select All.
 - [ ] Click the Fond button on the Home tab.
 - [ ] Double-click any word in the text box.
@@ -322,10 +319,10 @@ Personal Hint: There are multiple file suffixes for templates (.potx, .potm, .po
 
 #### Q42. How would you ensure a consistent appearance and placement across your slides even though the content might be different?
 
-- [x] Use fonts.
+- [ ] Use fonts.
 - [ ] Use styles.
 - [ ] Use bullet points.
-- [ ] Use layouts.
+- [x] Use layouts.
 
 #### Q43. How can you add icons to SmartArt?
 
@@ -348,30 +345,139 @@ Personal Hint: There are multiple file suffixes for templates (.potx, .potm, .po
 - [x] Custom Slide Show
 - [ ] Hide Slide
 
-#### Q45. When working with a mapchart, which options can be drawn?
+#### Q46. When working with a mapchart, which options can be drawn?
 
 - [ ] Postal code
 - [ ] State
 - [ ] Country
 - [x] All of these answers
 
-#### Q46.You receive feedback from two clients on your presentation. Each person sent you an edited file. What's the best way to review their changes?
+#### Q47. You receive feedback from two clients on your presentation. Each person sent you an edited file. What's the best way to review their changes?
 
 - [ ] Review > Accept
 - [ ] Review > Smart Lookup
 - [x] Review > Compare
 - [ ] Review > Show Comments
 
-#### Q46.How do you promote subbullets to top-level bullets?
+#### Q48. How do you promote subbullets to top-level bullets?
 
 - [x] Press Shift+Tab.
 - [ ] Right-click the bulleted text and select Promote.
 - [ ] Press the Esc key.
 - [ ] Press the Spacebar.
 
-#### Q46.What is the term used for the arrangement of elements on a slide, such as Title and Content?
+#### Q49. What is the term used for the arrangement of elements on a slide, such as Title and Content?
 
 - [ ] scheme
 - [x] layout
 - [ ] theme
 - [ ] design
+
+#### Q50. After you select the chart icon in a placeholder, what is the next step to create a chart?
+
+- [ ] Select the chart elements.
+- [ ] Select the chart type.
+- [x] Select the chart data in Excel.
+- [ ] Select the chart style.
+
+#### Q51. How would you show a correlation between the amount of chocolate a city consumes and the number of crimes committed?
+
+- [ ] Use a bar chart.
+- [ ] Use a column chart.
+- [ ] Use a line chart.
+- [x] Use a scatter chart.
+
+#### Q52. You want to use a morph transition between two slides. How do you set up the slides?
+
+- [ ] The two slides must have multiple objects in common with different names in the Selection pane
+- [x] The two slides must have at least one obiect in common that is in a different position on the second slide
+- [ ] The second slide must have different objects that are in the same position as the objects on the first slide
+- [ ] The two slides must have at least one obiect in common that is in the same position on the second slide
+
+1. [Reference](https://support.microsoft.com/en-us/office/use-the-morph-transition-in-powerpoint-8dd1c7b2-b935-44f5-a74c-741d8d9244ea#:~:text=The%20Morph%20transition%20allows%20you%20to%20animate%20smooth,of%20things%E2%80%94text%2C%20shapes%2C%20pictures%2C%20SmartArt%20graphics%2C%20and%20WordArt.)
+2. [Reference](https://twist.learningguild.net/2019/03/morph-magic-for-incredible-effects-in-powerpoint-richard-goring/#:~:text=Morph%20recognizes%20any%20duplicate%20objects%20across%20two%20slides,make%20objects%20change%20size%2C%20or%20shape%2C%20or%20color.)
+
+#### Q53. Why would you use the Rehearse Timings command?
+
+- [ ] to adiust animation timings
+- [ ] to record your slide show
+- [ ] to remove transition timings
+- [x] to determine how long it takes to present your slide show
+
+[Reference](https://it.nmu.edu/docs/rehearsing-timings-powerpoint)
+
+#### Q54. How can you make an inserted picture look like it has been sketched or painted?
+
+- [ ] Apply a picture effect
+- [ ] Apply a draw effect
+- [x] Apply an artistic effect
+- [ ] Apply a picture style
+
+[Reference](https://edu.gcfglobal.org/en/powerpoint2010/formatting-pictures/1/)
+
+#### Q55. How can you modify your presentations entire set of colors with a single change?
+
+- [ ] Apply a color template
+- [ ] Customize a color fill
+- [ ] Apply a color palette
+- [x] Apply a color theme
+
+[Reference](https://slidesgo.com/slidesgo-school/powerpoint-tutorials/how-to-change-colors-in-a-powerpoint-presentation)
+
+#### Q56. You want to print full-page slides to fill 8. 5-by-11-inch paper, but they appear too small in the preview. What is the best way to rectify this?
+
+- [ ] Change the slide size to standard
+- [ ] Repeatedly bump up the scale setting print option until it fills the page in the preview
+- [ ] Change the scale setting print option to 100%
+- [x] Select the **Scale to Fit Paper** print option
+
+[Reference](https://www.rdpslides.com/pptfaq/FAQ00774_Printing_PowerPoint-_Slide_size_v-_Printer_Page_size.htm)
+
+#### Q57. You want to import a Word document as an outline into a Powerpoint presentation. How should you format the Word documents text that you want to be the slide content?
+
+- [ ] List 2
+- [ ] Content Style
+- [ ] Subtitle
+- [x] Heading Style 2
+
+[Reference](https://support.microsoft.com/en-us/office/import-a-word-outline-into-powerpoint-a25f6e01-9a19-4c0d-a108-7f533e42dfe9)
+
+#### Q58. What is not reviewed when you check a slide shows accessibility?
+
+- [x] missing alt text
+- [ ] slide titles
+- [ ] grammar
+- [ ] reading order
+
+1. [Reference](https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1)
+2. [Reference](https://webaim.org/resources/evaloffice/)
+
+#### Q59. What is the easiest way to change the appearance of a table?
+
+- [ ] Apply a graphic style
+- [x] Apply a table style
+- [ ] Right-click a table and select a new style
+- [ ] Apply a cell style
+
+[Reference ](https://support.microsoft.com/en-us/office/change-the-look-of-a-table-a18cbaa8-e681-455f-a99f-a2378fe5ff06)
+
+#### Q60. Why would you use Outline view?
+
+- [ ] to quickly edit titles or bulleted text in the Slide pane
+- [ ] to view the comments on all slides
+- [ ] to add notes in the Slide pane
+- [ ] to change the font on all slides
+
+#### Q61. Before publishing a presentation, which option should you use to scan a presentation and look for issues that may make it difficult for someone with a visual impairment to read?
+
+- [ ] Protect Presentation
+- [ ] Inspect Document
+- [ ] Check Compatibility
+- [ ] Check Accessibility
+
+#### Q62. How can you filter the series and/or categories in a chart?
+
+- [ ] Edit the data to remove the data for the series or category.
+- [ ] Switch the rows and columns.
+- [ ] Use a filter so the data series or category does not display.
+- [ ] Change the chart type.

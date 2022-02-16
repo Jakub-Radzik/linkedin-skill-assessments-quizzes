@@ -242,9 +242,9 @@
 
 #### Q31. Which command makes it easier to adjust selected areas of color in two images in order to make them similar?
 
-- [ ] Match Color
+- [x] Match Color
 - [ ] Replace Color
-- [x] Hue/Saturation
+- [ ] Hue/Saturation
 - [ ] Levels
 
 #### Q32. If you scan a film or slide negative, which command turns it into a positive?
@@ -367,9 +367,11 @@
 ![Which option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?](images/001.png?raw=true)
 
 - [ ] Sample All Layers
-- [ ] Protect Tones
+- [x] Protect Tones
 - [ ] Use Pressure for Size
-- [x] Protect Colors
+- [ ] Protect Colors
+
+[Reference](https://helpx.adobe.com/photoshop/using/dodge-burn-image-areas.html)
 
 #### Q48. Which command in the **Smart Objects** submenu would you see to save the original file for the selected layer?
 
@@ -402,7 +404,7 @@
 
 ![What does the grayscale image in this figure show?](images/014.png?raw=true)
 
-- [ ] the edges affected by the Sharpen command as refined by the Masking slider
+- [x] the edges affected by the Sharpen command as refined by the Masking slider
 - [ ] the edges affected by the Sharpen command as refined by the Radius slider
 - [ ] the edges affected by the Sharpen command as refined by the Detail slider
 - [ ] the edges affected by the Sharpen command as refined by the Amount slider
@@ -422,3 +424,33 @@
 - [ ] In the **Brushes** panel, select a brush and then select **Convert to natural media**.
 - [x] In the **Brushes** panel, select **Legacy Brushes**.
 - [ ] in the **Tool Presents** panel.
+
+#### Q54. The option bar, which is normally above the canvas, is not visible. Where would you go to reopen it?
+
+- [x] View > Show > Show Extra Options
+- [ ] Window > Tool Presets
+- [ ] Window > Options
+- [ ] Edit > Toolbar
+
+#### Q55. What would you use to create a vector path for the purpose of altering a letter or shape?
+
+- [ ] Pencil tool
+- [ ] Vanishing Point
+- [x] Pen tool
+- [ ] Trace Contour filter
+
+#### Q56. How do you browse images on your hard drive using the companion application that is included with the Adobe Creative Cloud plans?
+
+- [x] Click `File > Browse in Bridge`
+- [ ] Click `File > Browse in Lightroom Classic CC.`
+- [ ] Use the Creative Cloud application.
+- [ ] Click `File > Browse in Lightroom CC`.
+
+#### Q57. Which command allows you to combine multiple channels into a new selection channel?
+
+- [ ] Flatten
+- [x] Calculations
+- [ ] Multiply
+- [ ] Merge
+
+[Answer found at:](https://helpx.adobe.com/photoshop/using/channel-calculations.html)

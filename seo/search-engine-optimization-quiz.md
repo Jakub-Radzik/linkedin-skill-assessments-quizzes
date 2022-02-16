@@ -51,30 +51,33 @@
 
 #### Q8. You want to block crawlers from accessing your entire website. What robots.txt entry would you use?
 
-- [ ] `````markdown
-              User-agent: Allbots
-              Disallow: \*
-              ```
-          ````
-      `````
-- [ ] `````markdown
-              User-agent: /
-              Disallow: \*
-              ```
-          ````
-      `````
-- [ ] `````markdown
-              User-agent: /
-              Disallow:
-              ```
-          ````
-      `````
-- [x] `````markdown
-              User-agent: \*
-              Disallow: /
-              ```
-          ````
-      `````
+- [ ]
+
+```markdown
+    User-agent: Allbots
+    Disallow: \*
+```
+
+- [ ]
+
+```markdown
+    User-agent: /
+    Disallow: \*
+```
+
+- [ ]
+
+```markdown
+    User-agent: /
+    Disallow:
+```
+
+- [x]
+
+```markdown
+    User-agent: \*
+    Disallow: /
+```
 
 #### Q9. Which results is most likely if you use an interstitial pop-up that requires a user to take action before you load the content of the page?
 
@@ -83,7 +86,7 @@
 - [ ] An interstitial pop-up is treated the same as a soft 404
 - [ ] The pop-up will be ignored, and the content of the page will be indexed correctly
 
-#### Q10. You notice a particular product in an e-commerce storefront is no longer indexed despite no technical issues. What is a likely reason for this?
+#### Q10. You notice a particular product in an e-commerce storefront is no longer indexed, despite no technical issues. What is a likely reason for this?
 
 - [x] No title or meta description tags were provided
 - [ ] The Keywords is too competitive
@@ -107,9 +110,8 @@
 #### Q13. You have been asked to help a big e-commerce brand optimize their website for search engines. They currently have thousands of products listed on their website. What is your most appropriate first step?
 
 - [ ] Recommend that they add more products
-- [x] WOrd on compressing image files
+- [x] Work on compressing image files
 - [ ] 302 redirect all product pages to URL that contains target keywords
-- [ ] 302 redirect all product ages to a URL that contains target keywords
 - [ ] Register the business with a Google My Business account.
 
 #### Q14. What Does The Term &quot;Sandbox&quot; Mean In SEO?
@@ -142,46 +144,49 @@
 
 #### Q18. Which choice represents the best header structure?
 
-- [ ] `````markdown
-              H1: How to Bak Bagels
-              H2: Ingredients
-              H3: Dry Ingredients
-              H4: Wet Ingredients
-              H2: Instructions
-              H6: Reviews
-              ```
-          ````
-      `````
-- [ ] `````markdown
-              H1: How to Bak Bagels
-              H1: Ingredients
-              H1: Dry Ingredients
-              H1: Wet Ingredients
-              H1: Instructions
-              H2: Reviews
-              ```
-          ````
-      `````
-- [ ] `````markdown
-              H1: How to Bak Bagels
-              H2: Ingredients
-              H3: Dry Ingredients
-              H3: Wet Ingredients
-              H2: Instructions
-              H2: Reviews
-              ```
-          ````
-      `````
-- [x] `````markdown
-              H1: How to Bak Bagels
-              H2: Ingredients
-              H4: Dry Ingredients
-              H5: Wet Ingredients
-              H6: Instructions
-              H1: Reviews
-              ```
-          ````
-      `````
+- [ ]
+
+```markdown
+    H1: How to Bak Bagels
+    H2: Ingredients
+    H3: Dry Ingredients
+    H4: Wet Ingredients
+    H2: Instructions
+    H6: Reviews
+```
+
+- [ ]
+
+```markdown
+    H1: How to Bak Bagels
+    H1: Ingredients
+    H1: Dry Ingredients
+    H1: Wet Ingredients
+    H1: Instructions
+    H2: Reviews
+```
+
+- [ ]
+
+```markdown
+    H1: How to Bak Bagels
+    H2: Ingredients
+    H3: Dry Ingredients
+    H3: Wet Ingredients
+    H2: Instructions
+    H2: Reviews
+```
+
+- [x]
+
+```markdown
+    H1: How to Bak Bagels
+    H2: Ingredients
+    H4: Dry Ingredients
+    H5: Wet Ingredients
+    H6: Instructions
+    H1: Reviews
+```
 
 #### Q19. All byline dates articles are suddenly no longer visible on a website's listing within Google Search. Assuming no changes have been made to the site programming or content, what is the most likely cause?
 
@@ -239,7 +244,7 @@
 - [ ] src
 - [x] alt
 
-#### Q27. You are researching keywords for a client and creating list for an optimization plan. Which is not a recommended method of creating keyword lists?
+#### Q27. You are researching keywords for a client and creating list for an optimization plan. Which is _not_ a recommended method of creating keyword lists?
 
 - [ ] synonyms and related words
 - [ ] queries about benefits, features, problems
@@ -253,7 +258,7 @@
 - [ ] Google Search Console
 - [ ] Google Suggest
 
-#### Q29. Changing the title tag and/or meta description will have a measurable impact on your \_\_\_\_.
+#### Q29. Changing the title tag and/or meta description will have a measurable impact on your \_.
 
 - [ ] RSS
 - [x] CTR
@@ -290,7 +295,7 @@
 - [ ] catalog/
 - [ ] gloves.html
 
-#### Q34. **\_\_\_\_** analysis allows you to review requests made to your web server to identify insights such as how ofter a crawler arrives, what pages have 404 errors, and most crawled pages
+#### Q34. **\_** analysis allows you to review requests made to your web server to identify insights such as how ofter a crawler arrives, what pages have 404 errors, and most crawled pages
 
 - [x] Log file
 - [ ] HTTP/2
@@ -345,11 +350,11 @@
 - [ ] suggested search terms
 - [ ] related search queries
 - [x] keywords that match the search query
-- [ ] words with a <b> tag assigned in their meta description
+- [ ] words with a `<b>` tag assigned in their meta description
 
 #### Q40. Which acronym is used to describe the page a user sees after submitting a search?
 
-- [x] SERT (Search Engine Results Page)
+- [x] SERP (Search Engine Results Page)
 - [ ] INDX
 - [ ] PARS
 - [ ] SEM
@@ -377,30 +382,33 @@
 
 #### Q44. You want to block crwlers from accessing your entire website. What robots.txt entry would you use?
 
-- [ ] `````
-                 User-agent: Allbots
-                 Disallow: *
-              ```
-          ````
-      `````
-- [ ] `````
-                 User-agent: /
-                 Disallow: *
-              ```
-          ````
-      `````
-- [ ] `````
-                 User-agent: *
-                 Disallow:
-              ```
-          ````
-      `````
-- [x] `````
-                 User-agent: *
-                 Disallow: /
-              ```
-          ````
-      `````
+- [ ]
+
+```
+    User-agent: Allbots
+    Disallow: *
+```
+
+- [ ]
+
+```
+    User-agent: /
+    Disallow: *
+```
+
+- [ ]
+
+```
+    User-agent: *
+    Disallow:
+```
+
+- [x]
+
+```
+    User-agent: *
+    Disallow: /
+```
 
 #### Q45. What is the relationship of click depth to PageRank?
 
@@ -430,7 +438,7 @@
 - [ ] Set site search to 404.
 - [ ] Add a canonical from the search result page to the home page.
 
-#### Q59. What might help a search engine understand the difference between an article on a dog bark versus tree bark?
+#### Q49. What might help a search engine understand the difference between an article on a dog bark versus tree bark?
 
 - [ ] tertiary analysis
 - [ ] ranked choice trees
@@ -443,3 +451,94 @@
 - [ ] The page is using structured data to define an alternative title object, which allows the search engine to pick a preferable version.
 - [ ] A breadcrumb navigation is in use, which overrides the title tag supplied in the HTML.
 - [x] Google generated a new title using text on the page that more closely matched the search query.
+
+#### Q51. What alt attribute should be assigned to an image of a decorative line being used to separate content
+
+- [x] alt=""
+- [ ] alt="Thin black line being used to seperate two blocks of content"
+- [ ] alt="dec"
+- [ ] alt="thin-line"
+
+#### Q52. Your site serves identical content when you visit domain.com/page or domain.com/page?ref=123. What should you implement?
+
+- [ ] parameter stripping
+- [ ] URL cloaking
+- [ ] a 302 redirect
+- [x] a rel=canonical link
+
+#### Q53. What data vocabulary is most commonly used when marking up content on a page?
+
+- [ ] vocabulary.org
+- [ ] RDFa.org
+- [x] schema.org
+- [ ] data-vocabulary.org
+
+#### Q54. According to Google, what type of content includes topics such as news, legal issues, financial advice, and medical information?
+
+- [ ] RSS
+- [ ] KYC
+- [x] YMYL
+- [ ] BDB
+
+**Explanation:** `Google describes YMYL (Your Money or Your Life) sites/pages as ones that could potentially impact a person’s happiness, health, financial stability, or safety.`
+
+#### Q55. When would it be necessary to 301 redirect every page on a site?
+
+- [ ] when parameters are used in URLs
+- [ ] when migrating from HTTP to HTTPS
+- [ ] when launching a new redesign
+- [x] when creating a new subdomain
+
+**Explanation:** From article: [Types of redirects](https://moz.com/learn/seo/redirection)
+
+#### Q56. What would contribute to a low bounce rate?
+
+- [ ] Content does not match search intent.
+- [ ] Page returns 404 error.
+- [x] Content reflects search intent.
+- [ ] URL uses parameters.
+
+#### Q57. What should be as consistent as possible across the web when developing a local SEO strategy?
+
+- [ ] backlinks
+- [x] NAP
+- [ ] LRP
+- [ ] inbound links
+
+1. [reference](https://support.google.com/business/answer/7091)
+2. [reference #2](https://www.smartinsights.com/search-engine-optimisation-seo/how-to-adjust-your-nap-profile-for-local-seo/)
+
+#### Q58.A user enters a search \_ to retrieve results from a search engine?
+
+- [x] query
+- [ ] parser
+- [ ] bar
+- [ ] link
+
+#### Q.59 The search query "How to make donuts without yeast" is an example of what?
+
+- [ ] fresh keyword
+- [ ] operative keyword
+- [ ] short-tail keyword
+- [x] long-tail keyword
+
+#### Q.60 What tool enables companies to display extra information within the natural search results without the need of any structured data?
+
+- [ ] Google Input Tools
+- [ ] structured data testing tool
+- [ ] Google Tag Manager
+- [x] Google My Business
+
+#### Q.61 Your client is ready to start a blog. but has read that they should put the blog on a subdomain instead of subdirectory in order to create more external links to their website. How would you advise your client about this strategy?
+
+- [ ] Not only should the blog be on a subdomain, but each of the major navigation areas should be on separate subdomains in order to increase the number and value of the links into the primary domain.
+- [x] It is best to have the blog on a subdirectory and build links to primary domain.
+- [ ] It is an advisable choice as it will enable interlinking between the domains and increase the number of links.
+- [ ] The blog should be on a separate URL to avouud building too many links between the same domain or IP.
+
+#### Q.62 Blog author pages, each with only one sentence about the author, are at risk of being flagged as **\_** content.
+
+- [ ] non-indexable
+- [ ] irrelevant
+- [ ] biased
+- [x] thin

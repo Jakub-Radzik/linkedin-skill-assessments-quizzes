@@ -73,7 +73,7 @@ xvect
 - [ ] attributes
 - [x] scalar
 
-#### Q10. In the image below, the data frame on lines 1 through 4 is names StDf. State and Capital are both factors. Which statement returns the results shown on lines 6 and 7?
+#### Q10. In the image below, the data frame on lines 1 through 4 is named StDf. State and Capital are both factors. Which statement returns the results shown on lines 6 and 7?
 
 ![Image](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png)
 
@@ -96,7 +96,7 @@ xvect
 - [ ] history()
 - [x] history(max.show = 25)
 
-#### Q13. d.pizza is a data frame. It's column named temperature contains only numbers. If u extract temperature using the [] accessors, its class defaults to numeric. How can you access temperature so that it retains the class of data.frame?
+#### Q13. d.pizza is a data frame. It's a column named temperature contains only numbers. If you extract temperature using the [] accessors, its class defaults to numeric. How can you access temperature so that it retains the class of data.frame?
 
 ```
 > class( d.pizza[ , "temperature" ] )
@@ -144,7 +144,7 @@ c <- a < b
 
 #### Q17. How does a vector differ from a list?
 
-- [ ] Vectors are used only for numeric data, while list are useful for both numeric and string data.
+- [ ] Vectors are used only for numeric data, while lists are useful for both numeric and string data.
 - [ ] Vectors and lists are the same thing and can be used interchangeably.
 - [x] A vector contains items of a single data type, while a list can contain items of different data types.
 - [ ] Vectors are like arrays, while lists are like data frames.
@@ -247,7 +247,7 @@ vbound<-cbind(v1,v2)
 - [ ] records where the first character is a C
 - [ ] any record with a value containing a C
 - [ ] TRUE or FALSE, depending on whether any character in ournames is C
-- [x] TRUE or FALSE values, depending on whether the first character in an ournames record is C
+- [x] TRUE and FALSE values, depending on whether the first character in an ournames record is C
 
 #### Q27. What is the value of names(v[4])?
 
@@ -276,15 +276,278 @@ Output: [1] 2 3 4
 
 #### Q29. Given DFMerged <- merge(DF1, DF2) and the image below, how manu rows are in DFMerged?
 
-```
-DF1(data frame 1): DF2(data frame 2):
-VarA VarB VarA VarD
-1 1 2 1 18 21
-2 4 5 2 19 22
-3 7 8 3 20 23
-```
+![image](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png)
 
 - [ ] 6
 - [ ] 9
 - [ ] 3
 - [x] 0
+
+#### Q30. What does R return in response to the final statement?
+
+```
+x<-5:8
+names(x)<-letters[5:8]
+x
+```
+
+- [ ] e f g h
+      "5" "6" "7" "8"
+- [ ] 5 6 7 8
+- [ ] e f g h
+- [x] e f g h
+      5 6 7 8
+
+#### Q31. How do you return "October" from x in this code?
+
+```
+x<-as.Date("2018-10-01")
+```
+
+- [ ] attr()
+- [x] months(x)
+- [ ] as.month(x)
+- [ ] month(x)
+
+#### Q32. How will R respond to the last line of this code?
+
+```
+fact<-factor(c("Rep","Dem","Dem","Rep"))
+fact
+[1] Rep Dem Dem Rep
+Levels: Rep Dem
+fact[2]<-"Ind"
+```
+
+- [ ] >
+- [ ] [,2]Ind
+- [x] invalid factor level, NA generated
+- [ ] Ind
+
+#### Q33. What does R return?
+
+```
+StartDate<- as.Date("2020/2/28")
+StopDate<- as.Date("2020/3/1")
+StopDate-StartDate
+```
+
+- [ ] "1970-01-02"
+- [ ] time difference of one day
+- [x] time difference of two days
+- [ ] error in x-y: nonnumeric argument to binary operator
+
+#### Q34. What does the expression `mtrx * mtrx` do ?
+
+```
+> mtrx <- matrix( c(3,5,8,4), nrow= 2,ncol=2,byrow=TRUE)
+> newmat <- mtrx * mtrx
+```
+
+- [ ] it transpose **mtrx**
+- [ ] it premultiplies the current **netwmat** row by the **newmat** column.
+- [x] it returns the results of a matrix multiplication
+- [ ] It squares each cell in **mtrx**
+
+#### Q35. Which function in R combines different values into a single object?
+
+- [ ] connect()
+- [ ] concat()
+- [ ] contact()
+- [x] c()
+
+#### Q36. Which file contains settings that R uses for all users of a given installation of R?
+
+- [ ] Rdefaults.site
+- [ ] Renviron.site
+- [x] Rprofile.site
+- [ ] Rstatus.site
+
+#### Q36. If **mdf** is a data frame, which statement is true ?
+
+- [x] **ncol(mdf)** equals **length(mdf)**.
+- [ ] The number of rows must equals the number of columns.
+- [ ] The legnth of any column in **mdf** may differ from any other column in **mdf**
+- [ ] All columns must have the same data type.
+
+#### Q37. A list can contain a list as an element. **MyList** has five columns, and the third column's item is a list of three items. How do you put all seven values in **MyList** into a single vector?
+
+- [ ] vector(MyList, length = 7)
+- [ ] coerce(MyList, nrows = 1)
+- [x] unlist(MyList)
+- [ ] coerce(MyList, nrows = 7)
+
+#### Q38. Which strings could be returned by the function ls(path = "^V")?
+
+- [ ] ANOVAData, anovadata
+- [x] VisitPCA, VarX
+- [ ] VisitPCA, varx
+- [ ] Xvar, Yvar
+
+#### Q39. StDf is a data frame. Based on this knowledge, what does this statement return?
+
+```r
+StDf[, -1]
+```
+
+- [ ] all but the first row and first column of StDf
+- [ ] all but the final column of StDf
+- [x] all but the first column of StDf
+- [ ] only the first column of StDf
+
+#### Q40. Which statement enables you to interactively open a single file?
+
+- [ ] file.list()
+- [ ] file.select()
+- [x] file.choose()
+- [ ] file.open()
+
+#### Q41. How are these data types alike: logical, integer, numeric, and character?
+
+- [ ] Each is a type of data frame.
+- [x] Each is a type of atomic vector.
+- [ ] Each is a type of complex vector.
+- [ ] Each is a type of raw vector.
+
+#### Q42. What does the `MyMat[ ,3]` subsetting operation return for this code?
+
+```r
+MyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)
+```
+
+- [ ]
+
+```
+[ ,3]
+[1, ] 8
+[2, ] 12
+```
+
+- [x]
+
+```
+[1] 8 12
+```
+
+- [ ]
+
+```
+[1] 10 12
+```
+
+- [ ]
+
+```
+[ ,3]
+[1, ] 10
+[2, ] 12
+```
+
+#### Q43. What does the function `power.anova.test` return?
+
+- [ ] the probability of making a Type I error
+- [x] the probability of not making a Type II error
+- [ ] the probability of making a Type II error
+- [ ] the probability of not making a Type I error
+
+#### Q44. Review the statement below. What is the effect of `covariate:factor` on the analysis?
+
+```r
+result <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)
+```
+
+- [ ] It forces the intercepts of the individual regressions to zero.
+- [ ] It calls for the effect of the covariate within each level of the factor.
+- [ ] It calls for the effect of each variable from covariate to factor in testcoef.
+- [ ] It forces the covariate to enter the equation before the factor levels.
+
+#### Q45. A variable whose type is numeric can contain which items?
+
+- [ ] integers and real values
+- [ ] integers, real, and raw values
+- [x] real values only
+- [ ] integers, real, and logical values
+
+#### Q46. What is the legitimate name of a data class in R?
+
+- [ ] property
+- [x] integer
+- [ ] number
+- [ ] variant
+
+#### Q47. How do you extract the values above the main diagonal from a square matrix named `Rmat`?
+
+- [x] `Rmat[upper.tri(Rmat)]`
+- [ ] `upper.triangular(Rmat)`
+- [ ] `upper.tri(Rmat)`
+- [ ] `upper.diag(Rmat)`
+
+#### Q48. `x` is a vector of type integer, as shown on line 1 below. What is the type of the result returned by the statement > median(x)?
+
+`x <- c(12L, 6L, 10L, 8L, 15L, 14L, 19L, 18L, 23L, 59L)`
+
+- [ ] numeric
+- [ ] integer
+- [ ] single
+- [x] double
+
+#### Q49. A list named `a` is created using the statement below. Which choice returns TRUE?
+
+`a <- list("10", TRUE, 5.6)`
+
+- [x] is.list(a[1])
+- [ ] is.numeric(a[1])
+- [ ] is.logical(a[1])
+- [ ] is.character(a[1])
+
+#### Q50. How do you return "October" from `x` in this code?
+
+`x <- as.Date("2018-10-01")`
+
+- [ ] as.month(x)
+- [x] months(x)
+- [ ] month(x)
+- [ ] attr(x)
+
+### Q51. How do you obtain the row numbers in a data frame named `pizza` for which the value of `pizza$delivery_min` is greater than or equal to 30?
+
+- [ ]
+
+```
+late_delivery <- pizza$delivery_min >= 30
+index_late <- index(late_delivery)
+index_late
+```
+
+- [ ]
+
+```
+late_delivery <- pizza$delivery_min >= 30
+rownum_late <- rownum(late_delivery)
+rownum_late
+```
+
+- [x]
+
+```
+late_delivery <- pizza$delivery_min >= 30
+which_late <- which(late_delivery)
+which_late
+```
+
+- [x]
+
+```
+late_delivery <- pizza$delivery_min >= 30
+late <- pizaa$late_delivery
+pizza$late
+```
+
+#### Q52. Which function returns `[1] TRUE FALSE TRUE`?
+
+`indat <- c("Ash Rd","Ash Cir","Ash St")`
+
+- [ ] grepl("[Rd|Ave|Dr|St]", indat)
+- [x] grepl("Rd|Ave|Dr|St", indat)
+- [ ] grepl("Rd,Ave,Dr,St", indat)
+- [ ] grepl("[Rd],[Ave],[Dr],[St]", indat)

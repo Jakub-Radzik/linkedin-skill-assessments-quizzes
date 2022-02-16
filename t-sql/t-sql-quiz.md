@@ -154,8 +154,8 @@ SELECT @UniqueID AS Result;
     SELECT 'abc\
     def' AS Result;
 
-- [x] abc\def
-- [ ] abcdef
+- [ ] abc\def
+- [x] abcdef
 - [ ] error
 - [ ] abc def
 
@@ -184,10 +184,12 @@ SELECT @UniqueID AS Result;
 
 - [ ] ALTER USER Sharon WITH DEFAULT_SCHEMA = Sales;
 - [ ] ALTER USER Sharon SET SCHEMA Sales;
-- [x] CREATE SCHEMA Sales SET OWNER Sharon;
-- [ ] CREATE SCHEMA Sales AUTHORIZATION Sharon;
+- [ ] CREATE SCHEMA Sales SET OWNER Sharon;
+- [x] CREATE SCHEMA Sales AUTHORIZATION Sharon;
 
-#### Q21. The result of a CROSS JOIN between a table with 4 rows, and one with 5 rows, will give with \_\_\_\_ rows.
+[Reference link](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-schema-transact-sql?view=sql-server-ver15)
+
+#### Q21. The result of a CROSS JOIN between a table with 4 rows, and one with 5 rows, will give with \_ rows.
 
 - [ ] 1024
 - [x] 20
@@ -203,6 +205,8 @@ SELECT @UniqueID AS Result;
 - [ ] `WHERE SerialNumer LIKE ('%10'+'_'+'3')`
 - [ ] `WHERE SerialNumer LIKE '%10"_"3'`
 - [ ] `WHERE SerialNumer LIKE '%10[_]3'`
+
+`The underscore will match any single character so you must bracket it to match a literal _, otherwise you could potentially return a serial number ending in '1013', for example.`
 
 #### Q23. When no join type between multiple tables in a query's FROM clause is specified, what type of join is assumed?
 
@@ -315,7 +319,7 @@ FROM Students
 WHERE Grade = (SELECT MIN(Grade) FROM Student);
 ```
 
-- [x]
+- [ ]
 
 ```
 SELECT TOP(1) Grade
@@ -323,7 +327,7 @@ FROM Students
 ORDER BY Grade;
 ```
 
-- [ ]
+- [x]
 
 ```
 SELECT MIN(Grade)
@@ -337,6 +341,8 @@ ORDER BY Grade;
 SELECT MIN(Grade)
 FROM Students
 ```
+
+**Explanation:** `Column "Students.Grade" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.`
 
 #### Q33. Given a table with the following structure, which query will not return the lowest grade earned by any student?
 
@@ -351,8 +357,8 @@ FROM Students
 
 - [ ] You should create a DML trigger on the server.
 - [ ] You should create a DDL trigger on the database.
-- [ ] You should create a DML trigger on TableA.
-- [x] You should create a DML trigger on TableB.
+- [x] You should create a DML trigger on TableA.
+- [ ] You should create a DML trigger on TableB.
 
 #### Q35. What is the problem with this code?
 
@@ -363,9 +369,9 @@ FROM Students
       SET @Counter = @Counter +1;
     END;
 
-- [x] There is no END WHILE statement;
+- [ ] There is no END WHILE statement;
 - [ ] The local varaible is not available to the WHILE block.
-- [ ] The query causes an infinite loop.
+- [x] The query causes an infinite loop.
 - [ ] "Counter" is an invalid variable name.
 
 #### Q36. Which is the right query to change the name of the Philosophy Pandas team to the Philosophy Parrots?
@@ -379,11 +385,16 @@ FROM Students
 
 #### Q37. What is the result of this query?
 
-```
-SELECT '123'+'123' AS Result;
-```
+`SELECT 123+'123' AS Result;`
 
-- [x] error
+- [ ] error
 - [ ] '123''123'
 - [ ] 123123
-- [ ] 246
+- [x] 246
+
+#### Q38. To combine the results of two or more SELECT statements, removing duplicates, which keyword can you use?
+
+- [ ] DEDUPE
+- [ ] SELECT
+- [ ] MERGE
+- [x] UNION

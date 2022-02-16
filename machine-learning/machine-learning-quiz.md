@@ -384,7 +384,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [x] You are underfitting the model to the data
 - [ ] You need a larger training set
 
-#### Q52. Your supervisor asks you to create a machine learning system that will help your human resources department classify jobs applicants into well defined groups. What type of system are you more likely to recommend?
+#### Q52. Your supervisor asks you to create a machine learning system that will help your human resources department classify jobs applicants into well-defined groups. What type of system are you more likely to recommend?
 
 - [ ] an unsupervised machine learning system that clusters together the best candidates.
 - [ ] you would not recommend a machine learning system for this type of project.
@@ -474,7 +474,7 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] Retrain your model with smaller batch sizes.
 - [x] Include Asian faces in your training data and retrain your model.
 
-  `The answer is self-explanatory: if Asian users are the only group of people making the complaint, then the training data should have more Asian faces.`
+`The answer is self-explanatory: if Asian users are the only group of people making the complaint, then the training data should have more Asian faces.`
 
 #### Q64. You work for a website that helps match people up for lunch dates. The website boasts that it uses more than 500 predictors to find customers the perfect date, but many costumers complain that they get very few matches. What is a likely problem with your model?
 
@@ -483,9 +483,9 @@ Note: there are centres of clusters (C0, C1, C2).
 - [x] You are overfitting the model to the data.
 - [ ] Your machine is creating inaccurate clusters.
 
-  **Explanation**: // This question is very similar to Q49 but involves a polar opposite scenario.
+**Explanation**: // This question is very similar to Q49 but involves a polar opposite scenario.
 
-  `that answer somewhat vague and unsettled. Small number of matchings does not necessarily implies that the model overfits, especially given 500 (!) independent variables. To me, it sounds more reasonable that the threshold (matching) criterion might be too tight, thus allowing only a small number of matching to occur. So a solution can be either softening the threshold criterion or increasing the number of candidates.`
+`that answer somewhat vague and unsettled. Small number of matchings does not necessarily implies that the model overfits, especially given 500 (!) independent variables. To me, it sounds more reasonable that the threshold (matching) criterion might be too tight, thus allowing only a small number of matching to occur. So a solution can be either softening the threshold criterion or increasing the number of candidates.`
 
 #### Q65. (Mostly) whenever we see kernel visualizations online (or some other reference) we are actually seeing:
 
@@ -621,9 +621,85 @@ Note: there are centres of clusters (C0, C1, C2).
 - [ ] a type of reinforcement learning where accuracy degrades over time
 - [x] a type of reinforcement learning that focuses on rewards
 
-#### Q82. Data in your model has low bias and low variance. How would you expect the data points to be grouped together on the diagram?
+**Explanation**:Q-learning is a model-free reinforcement learning algorithm.Q-learning is a values-based learning algorithm. Value based algorithms updates the value function based on an equation(particularly Bellman equation).
+[Reference](<https://towardsdatascience.com/a-beginners-guide-to-q-learning-c3e2a30a653c#:~:text=Q%2Dlearning%20is%20a%20model,equation(particularly%20Bellman%20equation).&text=Means%20it%20learns%20the%20value,independently%20of%20the%20agent's%20actions.>)
 
-- [ ] They would be grouped tightly together in the predicted outcome.
+#### Q82. The data in your model has low bias and low variance. How would you expect the data points to be grouped together on the diagram?
+
+- [x] They would be grouped tightly together in the predicted outcome.
 - [ ] They would be grouped tightly together but far from the predicted.
 - [ ] They would be scattered around the predict outcome.
-- [x] They would be scattered far away from the predeicted outcome.
+- [ ] They would be scattered far away from the predicted outcome.
+
+[Reference](https://medium.com/30-days-of-machine-learning/day-3-k-nearest-neighbors-and-bias-variance-tradeoff-75f84d515bdb)
+
+#### Q83. Your machine learning system is using labeled examples to try to predict future data, compare that data to the predicted result, and then the model. What is the best description of this machine learning method?
+
+- [ ] unsupervised learning
+- [ ] semi-supervised learning
+- [x] supervised learning
+- [ ] semi-reinforcement learning
+
+[Reference](https://www.expert.ai/blog/machine-learning-definition/)
+
+#### Q84. In the 1983 movie WarGames, the computer learns how to master the game of chess by playing against itself. What machine learning method was the computer using?
+
+- [ ] binary learning
+- [ ] supervised learning
+- [ ] unsupervised learning
+- [x] reinforcement learning
+
+[Reference](https://venturebeat.com/2016/03/16/heres-what-alphagos-historic-win-means-for-the-enterprise/)
+
+#### Q85. You are working with your machine learning algorithm on something called class preditor probability. What algorithm are you most likely using?
+
+- [ ] multiclass binary classification
+- [x] naive Bayes
+- [ ] unsupervised classification
+- [ ] decision tree analysis
+
+`//You could use a naïve Bayes algorithm, to differentiate three classes of dog breeds — terrier, hound, and sport dogs. Each class has three predictors — hair length, height, and weight. The algorithm does something called class predictor probability.`
+
+[Reference](https://www.linkedin.com/pulse/machine-learning-algorithms-doug-rose/)
+
+#### Q86. What is one of the most effective way to correct for underfitting your model to the data?
+
+- [ ] Create training clusters
+- [ ] Remove predictors
+- [ ] Use reinforcement learning
+- [x] Add more predictors
+
+#### Q87.Your data science team is often criticized for creating reports that are boring or too obvious. What could you do to help improve the team?
+
+- [x] Suggest that the team is probably underfitting the model to the data.
+- [ ] Suggest that unsupervised learning will lead to more interesting results.
+- [ ] Make sure that they are picking the correct machine learning algorithms.
+- [ ] Encourage the team to ask more interesting questions.
+
+#### Q88. What is the difference between unstructured and structured data?
+
+- [ ] Unstructured data is always text.
+- [ ] Unstructured data is much easier to store.
+- [x] Structured data has clearly defined data types.
+- [ ] Sturctured data is much more popular.
+
+#### Q89. You work for a startup that is trying to develop a software tool that will scan the internet for pictures of people using specific tools. The chief executive is very interested in using machine learning algorithms. What would you recommend as the best place to start?
+
+- [ ] Using an unsupervised machine learning algorithm to cluster together all the photographs.
+- [ ] Crate a data lake with an unsupervised machine learning algorithm.
+- [ ] Use a combination of unsupervised and supervised machine learning to create machine-defined data clusters.
+- [x] Use supervised machine learning to classify photographs based on a predetermined training set.
+
+#### Q90. In supervised machine learning, data scientist often have the challenge of balancing between underfitting or overfitting their data model. They often have to adjust the training set to make better predictions. What is this balance called?
+
+- [ ] the under/over challenge
+- [ ] balance between clustering classification
+- [x] bias-variance trade-off
+- [ ] the multiclass training set challenge
+
+#### Q91. What is conditional probability?
+
+- [x] the probability that doing one thing has an impact on another thing
+- [ ] the probability that certain conditions are met
+- [ ] the probability that, based on certain conditions, something will always be incorrect
+- [ ] the probability of something being the correct answer

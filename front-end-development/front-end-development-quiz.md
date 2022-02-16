@@ -351,7 +351,7 @@ const user = {
 - [x] It will tell the browser that a connection will be made to another origin and to start getting ready as soon as possible.
 - [ ] It will tell the browser that a resource is needed, and that it should start getting fetched as soon as possible.
 
-[Reference (web.dev)](https://web.dev/preconnect-and-dns-prefetch/)
+[web.dev](https://web.dev/preconnect-and-dns-prefetch/)
 
 #### Q37. Which choice is _not_ a render blocking resource?
 
@@ -360,7 +360,7 @@ const user = {
 - [ ] CSS
 - [ ] JavaScript
 
-[Reference (blog.logrocket)](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
+[blog.logrocket](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
 
 #### Q38. Which choice does _not_ provide information on browser support for a particular CSS property?
 
@@ -428,28 +428,143 @@ console.log(currencies);
 - [ ] `<input type="radio" value="vanilla" selected>`
 - [ ] `<input type="radio" value="vanilla" on>`
 
-
-#### Q45. _____ moves an element completely out of the page's normal layout flow, like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's <html> element (or its nearest positioned ancestor element)?
+#### Q45. **\_** moves an element completely out of the page's normal layout flow, like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's `<html>` element (or its nearest positioned ancestor element)?
 
 - [ ] Sticky positioning
-- [ ] Absolute positioning
+- [x] Absolute positioning
 - [ ] Relative positioning
 - [ ] Fixed positioning
-  
+
+[Source: W3Schools](https://www.w3schools.com/css/css_positioning.asp)
+
+**position: absolute;**
+`An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.`
+
 #### Q46. You have created a box that has a height set with CSS. Which line of CSS would add scroll bars if the content is taller than the box, but leave no visible scroll bars if the content fits into the box?
-
-
 
 - [ ] .box { overflow: scroll; }
 - [ ] .box { overflow: scroll-x; }
-- [ ] .box { overflow: auto; }
+- [x] .box { overflow: auto; }
 - [ ] .box { overflow: none; }
-  
+
 #### Q47. Which array method should you apply to run a function for every item within an array, returning an array of all items for which the function is true?
 
 - [ ] every()
 - [ ] map()
 - [ ] forEach()
-- [ ] filter()
-  
-  
+- [x] filter()
+
+#### Q48. The image below has float: left applied. Text wraps the float on the right and bottom. How would you force the second paragraph to start underneath the float, leaving a gap after the preceding paragraph?
+
+![CSS clear](images/Q48.png?raw=true)
+
+- [ ] Apply `float: left` to the second paragraph.
+- [ ] Apply `clear: right` to the floated item.
+- [x] Apply `clear: left` to the second paragraph.
+- [ ] Apply `clear: left` to the floated item.
+
+[Source: W3Schools](https://www.w3schools.com/css/css_float_clear.asp)
+
+**clear: left;**
+`When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property. When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.`
+
+#### Q49. You want to create striped table rows using CSS without adding a class to any element. Which CSS would correctly apply the background color to every odd row in your table?
+
+- [ ] `tr:nth-child(2) { background-color: #ccc; }`
+- [x] `tr:nth-child(2n+1) { background-color: #ccc; }`
+- [ ] `tr:nth-child(2+1) { background-color: #ccc; }`
+- [ ] `tr:nth-child(2n) { background-color: #ccc; }`
+
+[Source: W3Schools](https://www.w3schools.com/cssref/sel_nth-child.asp)
+
+#### Q50. You are designing a site and creating a navigation bar linking to the main sections. Which HTML element should you use to indicate that this is the main navigation?
+
+- [x] `<nav>`
+- [ ] `<navigation>`
+- [ ] `<main>`
+- [ ] `<ul>`
+
+[Source: W3Schools](https://www.w3schools.com/tags/tag_nav.asp)
+
+#### Q51. You discover that CSS is being loaded on a website using the following code. Why might a web developer have done this?
+
+`<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css"></noscript>`
+
+- [x] The CSS is being loaded asynchronously in order to prevent render blocking.
+- [ ] This will stop the CSS being loaded for old browsers that do not support the techniques in use.
+- [ ] This is part of a stylesheet-switching script to load different themes for the site.
+- [ ] This will stop the CCS being loaded on slow data connections.
+
+[Source: StackOverflow](https://stackoverflow.com/a/46750893)
+
+#### Q52. The flex property is often applied to flex items with a value of 1. Using flex: 1 is a shorthand - what does it unpack to?
+
+- [ ] flex: 0 0 100;
+- [x] flex: 1 0 0;
+- [ ] flex: 0 0 auto;
+- [ ] flex: 1 1 auto;
+
+[Source: stackoverflow](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)
+
+#### Q53. What does the term "tree shaking" mean with regard to JavaScript performance?
+
+- [ ] only using code that is supported by the newest browsers, and serving the site without JavaScript to old browsers
+- [x] removing unused code from the JavaScript files
+- [ ] splitting code into various bundles so that decisions can be made on loading priority
+- [ ] allowing the browser to ignore code it believes will perform badly
+
+[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)
+
+#### Q54. What is WebP?
+
+- [ ] a method of auditing performance that gives your site a score, which is then used for Google ranking
+- [x] a next-generation image format offering a smaller file size than equivalent PNG or JPEG images
+- [ ] a new font format that allows a single font to display at different styles and weights
+- [ ] a next-generation PDF format that offers a smaller file size and better accessibility than standard PDF documents
+
+[Source: Google Developers](https://developers.google.com/speed/webp)
+
+#### Q55. Your website uses CSS Grid Layout extensively, and a visitor who navigates using the keyboard tells you that they seem to jump erratically all over the screen when navigating. What is the most likely problem?
+
+- [ ] The visitor's browser does not have full support for CSS Grid Layout.
+- [x] Items have been positioned in such a way that they are in a different order to the source.
+- [ ] The browser has a keyboard navigation bug.
+- [ ] You need to add the tabindex attribute to elements.
+
+[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility)
+
+#### Q56. What is the definition of the phrase “Time to Interactive”?
+
+- [ ] when the browser displays the first bit of content from the DOM
+- [x] when the user can consistently interact with all of the page elements
+- [ ] when HTML has loaded, but not necessarily JavaScript, CSS, or images
+- [ ] when the user can see the webpage on the screen
+
+[Source: Web.dev](https://web.dev/interactive/)
+
+#### Q57. What is yarn?
+
+- [ ] a JavaScript framework that is leaner than React
+- [ ] a JavaScript bundler
+- [ ] a testing framework
+- [x] a JavaScript package manager
+
+[Source: Yarn Docs](https://yarnpkg.com/)
+
+#### Q58. What is the name of the event that occurs when the mouse pointer hovers over an element?
+
+- [ ] load
+- [x] mouseover
+- [ ] hover
+- [ ] focus
+
+[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event)
+
+#### Q59. What is meant by the term "polyfill" when used in web development?
+
+- [x] It is a piece of code that provides modern functionality in browsers that do not support it.
+- [ ] It is a piece of code that hides broken content from old browsers.
+- [ ] It is a term for languages such as Saas that compliles to CSS.
+- [ ] It is a script that runs to add vendor prefixes to modern CSS.
+
+[Source: Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)

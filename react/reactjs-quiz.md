@@ -316,7 +316,7 @@ const Heading = () => {
 - [ ] with webpack
 - [ ] with code splitting
 
-#### Q34. All React components must act like `**\_\_**` with respect to their props.
+#### Q34. All React components must act like **\_** with respect to their props.
 
 - [ ] monads
 - [x] pure functions
@@ -401,9 +401,8 @@ class clock extends React.Component {
 - [ ] Remove the render method
 - [x] Capitalize `clock`
 
-<details><summary>Explanation</summary>
-<p>In JSX, lower-case tag names are considered to be HTML tags. Read [this article](https://reactjs.org/docs/jsx-in-depth.html#html-tags-vs.-react-components)</p>
-</details>
+**Explanation:** In JSX, lower-case tag names are considered to be HTML tags.
+Read [this article](https://reactjs.org/docs/jsx-in-depth.html#html-tags-vs.-react-components)
 
 #### Q43. Which Hook could be used to update the document's title?
 
@@ -434,7 +433,7 @@ function MyComponent(props) {
 - [ ] `useEffect(() => { setDone(true); }, [setDone]);`
 - [ ] `useEffect(() => { setDone(true); }, [done, setDone]);`
 
-#### Q46. What value of button will allow you to pass the name of the person to be hugged?
+#### Q46. Which of the following click event handlers will allow you to pass the name of the person to be hugged?
 
 ```javascript
 class Huggable extends React.Component {
@@ -450,10 +449,10 @@ class Huggable extends React.Component {
 }
 ```
 
-- [x] `<button onClick={(name) => this.hug(name)>Hug Button</button>`
+- [ ] `<button onClick={(name) => this.hug(name)}>Hug Button</button>`
 - [ ] `<button onClick={this.hug(e, name)}>Hug Button</button>`
 - [ ] `<button onClick={(e) => hug(e, name)}>Hug Button</button>`
-- [ ] `<button onClick={(e) => this.hug(name, e)}>Hug Button</button>`
+- [x] `<button onClick={(e) => this.hug(name,e)}>Hug Button</button>`
 
 #### Q47. Currently, `handleClick` is being called instead of passed as a reference. How do you fix this?
 
@@ -656,7 +655,7 @@ const Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} /
 ```
 
 - [ ] `Button A will not have access to the event object on click of the button`
-- [ ] `Button A will not fire the handler this.handleClick successfully`
+- [x] `Button A will not fire the handler this.handleClick successfully`
 - [ ] `There is no difference`
 - [ ] `Button B will not fire the handler this.handleClick successfully`
 
@@ -679,51 +678,34 @@ useEffect(() => {
 <Route path="/:id" />
 ```
 
-- [ ] ``````````javascript
-      (
-        <Route path="/:id">
-          {' '}
-          <About />
-        </Route>
-      )```
-                              ````
-                          `````;
-      ``````;
-      ```````
-              ````````
-          `````````;
-      ``````````
-- [ ] ``````````javascript
-      (<Route path="/tid" about={Component} />)```
-                              ````
-                          `````;
-      ``````;
-      ```````
-              ````````
-          `````````;
-      ``````````
-- [ ] ``````````javascript
-      (<Route path="/:id" route={About} />)```
-                              ````
-                          `````;
-      ``````;
-      ```````
-              ````````
-          `````````;
-      ``````````
-- [ ] ``````````javascript
-      (
-        <Route>
-          <About path="/:id" />
-        </Route>
-      )```
-                              ````
-                          `````;
-      ``````;
-      ```````
-              ````````
-          `````````;
-      ``````````
+- [x] A
+
+```javascript
+<Route path="/:id">
+  {' '}
+  <About />
+</Route>
+```
+
+- [ ] B
+
+```javascript
+<Route path="/tid" about={Component} />
+```
+
+- [ ] C
+
+```javascript
+<Route path="/:id" route={About} />
+```
+
+- [ ] D
+
+```javascript
+<Route>
+  <About path="/:id" />
+</Route>
+```
 
 #### Q65. Which class-based component is equivalent to this function component?
 
@@ -731,52 +713,43 @@ useEffect(() => {
 const Greeting ({ name }) > <h1>Hello {name}!</h1>;
 ```
 
-- [ ] ``````````javascript
-      class Greeting extends React.Component {
-        constructor() {
-          return <h1>Hello (this.props.name)!</h1>;
-        }
-      }
-      ```
-                              ````
-                          `````;
-      ``````;
-      ```````
-              ````````
-          `````````;
-      ``````````
-- [ ] ``````````javascript
-                                     class Greeting extends React.Component { <h1>Hello (this.props.name}!</h1>; }
-                                  ```
-                              ````
-                          `````
-                      ``````
-                  ```````
-              ````````
-          `````````
-      ``````````
-- [ ] ``````````javascript
-                                     class Greeting extends React.Component { return <h1>Hello (this.props.name) 1</h1>; }
-                                  ```
-                              ````
-                          `````
-                      ``````
-                  ```````
-              ````````
-          `````````
-      ``````````
-- [ ] ``````````javascript
-                                      class Greeting extends React.Component ( render({ name }) {
-                                        return <h1>Hello (name)} !</h1>;
-                                      })
-                                  ```
-                              ````
-                          `````
-                      ``````
-                  ```````
-              ````````
-          `````````
-      ``````````
+- [ ] A
+
+```javascript
+class Greeting extends React.Component {
+  constructor() {
+    return <h1>Hello {this.props.name}!</h1>;
+  }
+}
+```
+
+- [ ] B
+
+```javascript
+class Greeting extends React.Component {
+  <h1>Hello {this.props.name}!</h1>;
+}
+```
+
+- [x] C
+
+```javascript
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello {this.props.name}!</h1>;
+  }
+}
+```
+
+- [ ] D
+
+```javascript
+class Greeting extends React.Component {
+  render({ name }) {
+    return <h1>Hello {name}!</h1>;
+  }
+}
+```
 
 #### Q66. Give the code below, what does the second argument that is sent to the render function describe?
 
@@ -797,7 +770,7 @@ ReactDOM.render(
 - [ ] The link component allows the user to use the browser's `Back` button.
 - [ ] There is no difference--the `Link` component is just another name for the `<a>` tag.
 - [ ] The `<a>` tag will cause an error when used in React.
-- [ ] The `<a>` tag triggers a full page reload, while the `Link` component does not.
+- [x] The `<a>` tag triggers a full page reload, while the `Link` component does not.
 
 #### Q68. What is the first argument, `x`, that is sent to the `createElement` function?
 
@@ -826,10 +799,7 @@ useEffect(() => {
 #### Q70. Given the code below, what does the second argument that is sent to the render function describe?
 
 ```javascript
-ReactDOM.render(
-  <h1>Hi</h1>,
-  document.getElementById('root')
-);
+ReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));
 ```
 
 - [x] where the React element should be added to the DOM
@@ -862,3 +832,272 @@ class Comp extends React.Component {
 - [ ] Component
 
 This question might be an updated version of Q37.
+
+#### Q73. When using a portal, what is the first argument?
+
+```javascript
+ReactDOM.createPortal(x, y);
+```
+
+- [ ] the current state
+- [x] the element to render
+- [ ] the App component
+- [ ] the page
+
+**Explanation:**
+From official docs: [Portals](https://reactjs.org/docs/portals.html)
+
+#### Q74. What is `setCount`?
+
+```javascript
+const [count, setCount] = useState(0);
+```
+
+- [ ] the initial state value
+- [ ] a variable
+- [ ] a state object
+- [x] a function to update the state
+
+**Reference:**
+From official docs: [Hooks-State](https://reactjs.org/docs/hooks-state.html#:~:text=If%20we%20want%20to%20update%20the%20current)
+
+#### Q75. What is the use of map function below?
+
+```javascript
+const database = [user1:{},user2:{},user3:{}];
+database.map((user)=><h1>user.data</h1>);
+```
+
+- [ ] gives a map of all the entries in database
+- [x] returns a heading tag for every entry in the database containing it's data
+- [ ] returns one heading tag for all the entries in database
+- [ ] checks which entry in the database is suitable for heading tag
+
+#### Q76. Describe what is happening in this code?
+
+```javascript
+const { name: firstName } = person;
+```
+
+- [ ] It is creating a new object that contains the same name property as the person object.
+- [ ] It is assigning the value of the person object's firstName property to a constant called name.
+- [ ] It is retrieving the value of person.name.firstName.
+- [x] It is assigning the value of the person object's name property to a constant called firstName.
+
+#### Q77. What is wrong with this code?
+
+```javascript
+const MyComponent = ({ names }) => (
+  <h1>Hello</h1>
+  <p>Hello again</p>
+);
+```
+
+- [ ] React components cannot be defined using functions.
+- [x] React does not allow components to return more than one element.
+- [ ] The component needs to use the return keyword.
+- [ ] String literals must be surrounded by quotes.
+
+#### Q78. When using a portal, what is the second argument?
+
+```javascript
+ReactDOM.createPortal(x, y);
+```
+
+- [ ] the App component
+- [ ] the page
+- [ ] the current state
+- [x] the DOM element that exists outside of the parent component
+
+#### Q79. Given this code, what will be printed in the `<h1>` tag?
+
+```javascript
+const MyComponent = ({ children }) => (
+  <h1>{children.length}</h1>
+);
+...
+<MyComponent>
+<p>Hello</p>
+<p>Goodbye</p>
+</MyComponent>
+```
+
+- [ ] It will produce an error saying "cannot read property "length" of undefined."
+- [ ] 1
+- [ ] undefined
+- [x] 2
+
+#### Q80. What is this pattern called?
+
+```javascript
+const [count, setCount] = useState(0);
+```
+
+- [ ] object destructuring
+- [x] array destructuring
+- [ ] spread operating
+- [ ] code pushing
+
+#### Q81. What is the first file loaded by the browser in a basic React project?
+
+- [ ] src/App.js
+- [ ] src/index.js
+- [ ] public/manifest.json
+- [x] public/index.html
+
+#### Q82. The code below is rendering nothing, and there is an error that says "ReactDOM is not defined." How do you fix this issue?
+
+```javascript
+import React from 'react';
+import { render } from 'react-dom';
+
+const element = <h1>Hi</h1>;
+
+ReactDOM.render(element, document.getElementById('root'));
+```
+
+- [x] `render(element, document.getElementById("root"));`
+- [ ] `ReactDOM(element, document.getElementById("root"));`
+- [ ] `renderDOM(element, document.getElementById("root"));`
+- [ ] `DOM(element, document.getElementById("root"));`
+
+#### Q83. In this component, how do you display whether the user was logged in or not?
+
+```javascript
+render() {
+  const isLoggedIn = this.state.isLoggedIn;
+  return (
+    <div>
+      The user is:
+    </div>
+  );
+}
+```
+
+- [ ] `The user is loggedIn ? logged in : not logged in.`
+- [ ] Write a function to check the login status.
+- [ ] `The user is {isLoggedIn = "no"}.`
+- [x] `The user is {isLoggedIn ? "logged in." : "not logged in"}.`
+
+#### Q84. You are rendering a list with React when this warning appears in the console: "Warning: Each child in a list should have a unique 'key' prop." How do you fix this issue?
+
+- [ ] Pass the name of each item as its key.
+- [ ] Add a key prop with the same value to each item the list.
+- [ ] Clear the console warnings.
+- [x] When iterating over the list items, add a unique property to each list item.
+
+#### Q85. How would you generate the boilerplate code for a new app that you are building to collect underpants?
+
+- [ ] npm create-react-app collect-underpants
+- [ ] npx start-app collect-underpants
+- [ ] react new collect-underpants
+- [x] npx create-react-app collect-underpants
+
+[Source: React Docs](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
+
+#### Q86. Add the code that will fire the photon torpedoes when the button is clicked.
+
+```javascript
+class StarTrekkin extends React.Component {
+  firePhotonTorpedoes(e) {
+    console.log('pew pew');
+  }
+  render() {
+    return; // Missing code
+  }
+}
+```
+
+- [ ] `<button onClick={firePhotonTorpedoes()}>Pew Pew</button>`
+- [ ] `<button onClick={firePhotonTorpedoes}>Pew Pew</button>`
+- [ ] `<button onClick={this.firePhotonTorpedoes()}>Pew Pew</button>`
+- [x] `<button onClick={this.firePhotonTorpedoes}>Pew Pew</button>`
+
+[Source: React Docs](https://reactjs.org/docs/handling-events.html)
+
+#### Q87. What is the process of deciding whether an update is necessary?
+
+- [ ] shadow DOM
+- [ ] fiber
+- [x] reconciliation
+- [ ] setting state
+
+#### Q88. React is an open-source project but is maintained by which company?
+
+- [ ] Intuit
+- [ ] Twitter
+- [x] Facebook
+- [ ] Snapchat
+
+#### Q89. What command can you use to generate a React project?
+
+- [ ] react-starter
+- [x] create-react-app
+- [ ] react-gen
+- [ ] react-start
+
+#### Q90. What is the browser extension called that React developers use to debug applications?
+
+- [x] React Developer Tools
+- [ ] React Tooling Add-on
+- [ ] React Codewatch
+- [ ] React Debug
+
+#### Q91. Which tool is not part of Create React App?
+
+- [ ] React
+- [x] jQuery
+- [ ] webpack
+- [ ] ReactDOM
+
+#### Q92. What is the JavaScript syntax extension that is commonly used to create React elements?
+
+- [ ] HTML
+- [ ] JavaScriptX
+- [x] JSX
+- [ ] React JavaScript
+
+#### Q93. How might you check property types without using Flow or TypeScript?
+
+- [ ] Check Manually.
+- [ ] Use `prop-helper`.
+- [x] use `prop-types`.
+- [ ] user `checker-types`.
+
+#### Q94. How do you add an id of heading to the following h1 element?
+
+`let dish = <h1>Mac and Cheese</h1>; `
+
+- [ ] `let dish = <h1 id={heading}>Mac and Cheese</h1>;`
+- [x] `let dish = <h1 id="heading">Mac and Cheese</h1>;`
+- [ ] `let dish = <h1 id:"heading">Mac and Cheese</h1>;`
+- [ ] `let dish = <h1 class="heading">Mac and Cheese</h1>;`
+
+#### Q95. What value of button will allow you to pass the name of the person to be hugged?
+
+```
+class Huggable extends React.Component {
+  hug(id) {
+    console.log("hugging " + id);
+  }
+  render() {
+    let name = "kitteh";
+    let button = // Missing code
+    return button;
+  }
+}
+```
+
+- [ ] `<button onClick={(name) => this.hub(name)}>Hug Button`
+- [ ] `<button onClick={this.hug(e, name)}>Hug Button`
+- [ ] `<button onClick={(e) => this.hug(name, e)}>Hug Button`
+- [ ] `<button onClick={(e) => this.hug(name, e)}>Hug Button`
+
+#### Q96. What syntax do you use to create a component in React?
+
+- [ ] a generator
+- [x] a function or a class
+- [ ] a service worker
+- [ ] a tag
+
+`React Components are like functions that return HTML elements. Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components.` [(Source)](https://reactjs.org/docs/components-and-props.html)
